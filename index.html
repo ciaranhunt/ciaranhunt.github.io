@@ -195,7 +195,7 @@
             "@type": "ImageObject",
             "url": "https://ciaranhunt.github.io/img/default_avatar.png"
         },
-        "description": "Hi, nice to meet you."
+        "description": "man propose,god dispose"
     },
     "publisher": {
         "@type": "Organization",
@@ -246,7 +246,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                man propose,god dispose
             
         
     </p>
@@ -262,6 +262,8 @@
         <a href="/search" class="navbar-link">搜索</a>
     
     
+        <a href="/about/" class="navbar-link">About</a>
+    
     
         <div class="dropdown dropdown-right">
     <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
@@ -276,23 +278,11 @@
 
         <!-- Share Twitter -->
         
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=Ciaran Hunt&url=https://ciaranhunt.github.io&via=Ciaran Hunt" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-        </li>
-        
 
         <!-- Share Facebook -->
         
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://ciaranhunt.github.io" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-        </li>
-        
 
         <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=https://ciaranhunt.github.io" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-        </li>
         
 
         <!-- Share LinkedIn -->
@@ -570,7 +560,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2019;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>
