@@ -152,7 +152,7 @@
     <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Ciaran Hunt"><meta name="msapplication-starturl" content="https://ciaranhunt.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Ciaran Hunt"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="GitHub如何配置SSH Key | Ciaran Hunt"><meta property="og:site_name" content="Ciaran Hunt"><meta property="og:type" content="article"><meta property="og:url" content="https://ciaranhunt.github.io/2020/01/02/GitHu%E9%85%8D%E7%BD%AESSH%20Key/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Ciaran Hunt - Ciaran Hunt"><meta name="keywords" content="-Github"><meta property="article:published_time" content="2020-01-02T07:21:51.000Z"><meta property="article:modified_time" content="2020-01-02T07:22:13.492Z"><meta property="og:updated_time" content="2020-01-02T07:22:13.492Z"><meta property="article:author" content="Ciaran Hunt"><meta property="article:tag" content="-Github"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="GitHub如何配置SSH Key | Ciaran Hunt"><meta property="og:site_name" content="Ciaran Hunt"><meta property="og:type" content="article"><meta property="og:url" content="https://ciaranhunt.github.io/2020/01/02/GitHu%E9%85%8D%E7%BD%AESSH%20Key/"><meta property="og:locale" content="zh-CN"><meta name="description" content="https:&#x2F;&#x2F;github.com&#x2F;ciaranhunt&#x2F;ciaranhunt.github.io.git git@github.com:ciaranhunt&#x2F;ciaranhunt.github.io.git这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？前者是https url直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置 - Ciaran Hunt - Ciaran Hunt"><meta name="keywords" content="-Github"><meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEBe6262a1b174313c06b6fad0e0ade4f73?method=download&shareKey=f4ce2f15b6ee4586fe97e49341582cfa"><meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB4500899a07749c2b4a3370f852f24116?method=download&shareKey=99ed6dc05c287677d2bd43ef20c425e0"><meta property="article:published_time" content="2020-01-02T07:21:51.000Z"><meta property="article:modified_time" content="2020-01-02T07:50:53.397Z"><meta property="og:updated_time" content="2020-01-02T07:50:53.397Z"><meta property="article:author" content="Ciaran Hunt"><meta property="article:tag" content="-Github"><meta name="twitter:card" content="summary">
 
     
 
@@ -193,7 +193,7 @@
     },
     
     "datePublished": "2020-01-02T07:21:51.000Z",
-    "dateModified": "2020-01-02T07:22:13.492Z",
+    "dateModified": "2020-01-02T07:50:53.397Z",
     "author": {
         "@type": "Person",
         "name": "Ciaran Hunt",
@@ -219,7 +219,7 @@
     },
     
     "keywords": "-Github",
-    "description": "Ciaran Hunt - Ciaran Hunt"
+    "description": "https://github.com/ciaranhunt/ciaranhunt.github.io.git git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？前者是https url直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置 - Ciaran Hunt - Ciaran Hunt"
 }
 </script>
 
@@ -429,9 +429,32 @@
                     
                         
                         
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设置git的user-name和email"><span class="post-toc-number">1.</span> <span class="post-toc-text">设置git的user name和email</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#检查是否存在SSH-Key"><span class="post-toc-number">2.</span> <span class="post-toc-text">检查是否存在SSH Key</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#获取SSH-Key"><span class="post-toc-number">3.</span> <span class="post-toc-text">获取SSH Key</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#GitHub添加SSH-Key"><span class="post-toc-number">4.</span> <span class="post-toc-text">GitHub添加SSH Key</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#验证"><span class="post-toc-number">5.</span> <span class="post-toc-text">验证</span></a></li></ol></div>
+                        
                     
                     <article id="post-content">
-                        <a id="more"></a>
+                        <pre><code>https://github.com/ciaranhunt/ciaranhunt.github.io.git
+git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？<br>前者是<strong>https url</strong>直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置，永久使用呢？当然，所以有了第二种地址，也就是<strong>SSH URL</strong>，那如何配置就是本文要分享的内容。<br>GitHub配置SSH Key的目的是为了帮助我们在通过git提交代码是，不需要繁琐的验证过程，简化操作流程。</p>
+<a id="more"></a>
+
+<h2 id="设置git的user-name和email"><a href="#设置git的user-name和email" class="headerlink" title="设置git的user name和email"></a>设置git的user name和email</h2><p>如果你是第一次使用，或者还没有配置过的话需要操作一下命令，自行替换相应字段。</p>
+<pre><code>git config --global user.name &quot;Luke.Deng&quot;
+git config --global user.email  &quot;xiangshuo1992@gmail.com&quot;</code></pre><p>说明：git config –list 查看当前Git环境所有配置，还可以配置一些命令别名之类的.</p>
+<h2 id="检查是否存在SSH-Key"><a href="#检查是否存在SSH-Key" class="headerlink" title="检查是否存在SSH Key"></a>检查是否存在SSH Key</h2><pre><code>cd ~/.ssh
+ls
+或者
+ll</code></pre><p>看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key<br><img src="https://note.youdao.com/yws/api/personal/file/WEBe6262a1b174313c06b6fad0e0ade4f73?method=download&shareKey=f4ce2f15b6ee4586fe97e49341582cfa" alt="ssh配置"><br>如果没有SSH Key，则需要先生成一下</p>
+<pre><code>ssh-keygen -t rsa -C &quot;571074750@qq.com&quot;</code></pre><h2 id="获取SSH-Key"><a href="#获取SSH-Key" class="headerlink" title="获取SSH Key"></a>获取SSH Key</h2><pre><code>cat id_rsa.pub</code></pre><p><img src="https://note.youdao.com/yws/api/personal/file/WEB4500899a07749c2b4a3370f852f24116?method=download&shareKey=99ed6dc05c287677d2bd43ef20c425e0" alt="获取sshkey"></p>
+<h2 id="GitHub添加SSH-Key"><a href="#GitHub添加SSH-Key" class="headerlink" title="GitHub添加SSH Key"></a>GitHub添加SSH Key</h2><ol>
+<li>GitHub点击用户头像，选择setting</li>
+<li>选择SSH and GPGkeys</li>
+<li>新建一个SSH Key  </li>
+</ol>
+<p>取个名字，把之前拷贝的秘钥复制进去，添加就好啦。</p>
+<h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>测试是否成功配置SSH Key</p>
+<pre><code>ssh -T git@github.com
+//运行结果出现类似如下
+Hi xiangshuo1992! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</code></pre>
                     </article>
                     
 
