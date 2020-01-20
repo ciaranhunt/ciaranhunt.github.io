@@ -4,11 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="进程管理, Ciaran Hunt">
-    <meta name="description" content="前言在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。
+    <meta name="keywords" content="IO流, Ciaran Hunt">
+    <meta name="description" content="前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
 
 
-ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
+流的分类
+数据单位不同：8bit（字节流）、16bit（字符流）
+流向不同：输入流、输出流
+角色不同：节点流、处理">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +19,7 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>进程管理 | Ciaran Hunt</title>
+    <title>IO流 | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +309,12 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">进程管理</h1>
+                    <h1 class="description center-align post-title">IO流</h1>
                 </div>
             </div>
         </div>
@@ -428,8 +431,8 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
-                                <span class="chip bg-color">-系统 -Linux</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">-Java</span>
                             </a>
                         
                     </div>
@@ -453,21 +456,21 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-14
+                    2020-01-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-15
+                    2020-01-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    580
+                    258
                 </div>
                 
 
@@ -485,37 +488,24 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>好色风流，不是冤家不聚头。<br>只为淫人妇，难保妻儿否，<br>嬉戏眼前谋，孽满身后，<br>报应从头，万恶淫为首，<br>因此上媒色邪淫一笔勾。</strong></p>
 <a id="more"></a>
 
-<h2 id="ps指令"><a href="#ps指令" class="headerlink" title="ps指令"></a>ps指令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">常用的选项：</span><br><span class="line">  -a 显示当前终端的所有进程</span><br><span class="line">  -u 以用户的格式显示信息</span><br><span class="line">  -x 显示后台进程运行的参数</span><br></pre></td></tr></table></figure>
+<h2 id="流的分类"><a href="#流的分类" class="headerlink" title="流的分类"></a>流的分类</h2><ul>
+<li>数据单位不同：8bit（字节流）、16bit（字符流）</li>
+<li>流向不同：输入流、输出流</li>
+<li>角色不同：节点流、处理流<br><img src="https://s2.ax1x.com/2020/01/19/1CHc8K.png" alt="1CHc8K.png"></li>
+</ul>
+<h3 id="IO流体系"><a href="#IO流体系" class="headerlink" title="IO流体系"></a>IO流体系</h3><p><a href="https://imgchr.com/i/1CHWKe" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/19/1CHWKe.md.png" alt="1CHWKe.md.png"></a></p>
+<ul>
+<li>对于非文本文件，字节流用byte数组来存</li>
+<li>对于文本文件，字符流用char数组来存</li>
+</ul>
+<h2 id="输入流"><a href="#输入流" class="headerlink" title="输入流"></a>输入流</h2><p>读取外部数据（磁盘等存储设备）到内存中。  </p>
+<h2 id="输出流"><a href="#输出流" class="headerlink" title="输出流"></a>输出流</h2><p>读取内存数据到磁盘等存储设备</p>
+<h2 id="实现字节文件复制"><a href="#实现字节文件复制" class="headerlink" title="实现字节文件复制"></a>实现字节文件复制</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">File srcFile = <span class="keyword">new</span> File(<span class="string">"test2.txt"</span>);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">"test3.txt"</span>);</span><br><span class="line"></span><br><span class="line">FileReader fileReader = <span class="keyword">null</span>;</span><br><span class="line">FileWriter fileWriter = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileReader = <span class="keyword">new</span> FileReader(srcFile);</span><br><span class="line">    fileWriter = <span class="keyword">new</span> FileWriter(desFile);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">char</span>[] cbuf=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">5</span>];</span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="keyword">while</span> ((len=fileReader.read(cbuf))!=-<span class="number">1</span>)&#123;</span><br><span class="line">        fileWriter.write(cbuf,<span class="number">0</span>,len);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">assert</span> fileWriter != <span class="keyword">null</span>;</span><br><span class="line">        fileWriter.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        fileReader.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><a href="https://imgchr.com/i/lqTLlT" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/14/lqTLlT.md.png" alt="lqTLlT.md.png"></a><br>标题解释：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">USER：用户</span><br><span class="line">PID：进程id</span><br><span class="line">%CPU：占用cpu</span><br><span class="line">%MEM：占用内存</span><br><span class="line">VSZ：占用虚拟内存</span><br><span class="line">RSS：占用物理内存</span><br><span class="line">TTY：使用的终端</span><br><span class="line">STAT：进程的状态（s：休眠，r：正在运行）</span><br><span class="line">START：启动时间</span><br><span class="line">TIME：占用CPU的总计时间</span><br><span class="line">COMMAN：进程执行的命令行</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看父进程"><a href="#查看父进程" class="headerlink" title="查看父进程"></a>查看父进程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef</span><br></pre></td></tr></table></figure>
-
-<p><strong>ppid表示父进程id</strong></p>
-<h2 id="终止进程"><a href="#终止进程" class="headerlink" title="终止进程"></a>终止进程</h2><p>若一个进程执行一半需要停止时，或者已消耗了很大的系统资源时，此时需要考虑停止进程。</p>
-<h3 id="kill指令与killall指令"><a href="#kill指令与killall指令" class="headerlink" title="kill指令与killall指令"></a>kill指令与killall指令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">kill [选项] 进程号</span><br><span class="line">killall [选项] 进程名称</span><br><span class="line">----------------------</span><br><span class="line">常用选项：</span><br><span class="line">    -9 表示强迫进程立即停止</span><br></pre></td></tr></table></figure>
-
-<h3 id="进程树"><a href="#进程树" class="headerlink" title="进程树"></a>进程树</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pstree [选项]</span><br><span class="line">常用选项：</span><br><span class="line">    -p 显示进程的pid</span><br><span class="line">    -u 显示进程所属用户</span><br></pre></td></tr></table></figure>
-
-<h2 id="服务管理"><a href="#服务管理" class="headerlink" title="服务管理"></a>服务管理</h2><p>服务（service）本质就是进程，但是运行在后台，通常都会监听某个端口，等待其它进程的请求。</p>
-<h3 id="查看服务名"><a href="#查看服务名" class="headerlink" title="查看服务名"></a>查看服务名</h3><ol>
-<li>使用setup</li>
-<li>/etc/init.d/</li>
-</ol>
-<h3 id="服务管理指令"><a href="#服务管理指令" class="headerlink" title="服务管理指令"></a>服务管理指令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">service 服务名 [start|stop|restart|reload|status]</span><br><span class="line">------------------------------------------------</span><br><span class="line">版本更新后使用sysytemctl指令</span><br></pre></td></tr></table></figure>
-
-<h2 id="动态监控进程"><a href="#动态监控进程" class="headerlink" title="动态监控进程"></a>动态监控进程</h2><h3 id="1-top指令"><a href="#1-top指令" class="headerlink" title="1.top指令"></a>1.top指令</h3><p>与ps指令很相似，最大的不同在于执行一段时间后可自动更新正在运行的进程。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">top [选项]</span><br><span class="line">常用选项：</span><br><span class="line">    -d 秒数  ：指定更新时间（默认3秒）</span><br><span class="line">    -i ： 不显示任何闲置进程和僵死进程</span><br><span class="line">    -p ： 指定进程id监控</span><br><span class="line">------------------------------------</span><br><span class="line">top指令执行后，可以输入u来进行筛选用户。</span><br><span class="line">            输入k来指定pid终止进程</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-netstat"><a href="#2-netstat" class="headerlink" title="2.netstat"></a>2.netstat</h3><p>查看网络服务情况。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">netstat [选项]</span><br><span class="line">常用选项：</span><br><span class="line">    -an：按一定顺序排列输出</span><br><span class="line">    -i ： 不显示任何闲置进程和僵死进程</span><br><span class="line">    -p ： 显示进程调用</span><br><span class="line">------------------------------------</span><br><span class="line">top指令执行后，可以输入u来进行筛选用户。</span><br><span class="line">            输入k来指定pid终止进程</span><br></pre></td></tr></table></figure>
-
-<h2 id="开放端口"><a href="#开放端口" class="headerlink" title="开放端口"></a>开放端口</h2><p>vim /etc/sysconfig/iptables</p>
-
+<h2 id="缓冲流"><a href="#缓冲流" class="headerlink" title="缓冲流"></a>缓冲流</h2>
             </div>
             <hr/>
 
@@ -540,7 +530,7 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/">https://ciaranhunt.github.io/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/">https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,8 +568,8 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
-                                    <span class="chip bg-color">-系统 -Linux</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">-Java</span>
                                 </a>
                             
                         </div>
@@ -745,9 +735,10 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/01/19/java-fu-xi/io-liu/">
                     <div class="card-image">
@@ -771,9 +762,9 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -786,6 +777,7 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -804,32 +796,27 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程 ">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/13/linux-xue-xi/shi-cao-pian/ci-pan-fen-qu-yu-gua-zai/">
+                <a href="/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="磁盘分区与挂载">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="进程管理">
                         
-                        <span class="card-title">磁盘分区与挂载</span>
+                        <span class="card-title">进程管理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言八月中秋白露，路上行人凄凉；小桥流水稻花香，日夜千思万想。心中不得宁静，清晨早念文章；十年寒苦在书房，方显才高智广。
+                            前言在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。
 
 
-基础知识分区方式
-MBR分区
-最多支持四个主分区
-系统只能安装在主分区上
-扩展分区要占一个主分区
-MBR最大支持2
+ps指令1234常用的选项：  -a 显示当前终端的所有进程 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-14
                             </span>
                         <span class="publish-author">
                             
