@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="更换hexo主题, Ciaran Hunt">
-    <meta name="description" content="前言刚安装hexo的时候就已经安装了Next主题，之后又想安装其它主题，找到了suka主题,本来打算不折腾，没想到又折腾到manjaro了（不过manjaro的自定义程度是真的高）。好了，开始！
-
-下载suka1.可以直接在官方的githu">
+    <meta name="keywords" content="github相关指令, Ciaran Hunt">
+    <meta name="description" content="基本操作第一次提交远程仓库切换到要提交的文件根目录
+12345git initgit add .git commit -m &#34;first commit&#34;git remote add origin https://github.com/cia">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>更换hexo主题 | Ciaran Hunt</title>
+    <title>github相关指令 | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">更换hexo主题</h1>
+                    <h1 class="description center-align post-title">github相关指令</h1>
                 </div>
             </div>
         </div>
@@ -427,8 +426,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">-hexo</span>
+                            <a href="/tags/Github/">
+                                <span class="chip bg-color">-Github</span>
                             </a>
                         
                     </div>
@@ -452,21 +451,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-31
+                    2020-01-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-08
+                    2020-01-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    790
+                    144
                 </div>
                 
 
@@ -484,50 +483,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚安装hexo的时候就已经安装了Next主题，之后又想安装其它主题，找到了<a href="https://theme-suka.skk.moe/" target="_blank" rel="noopener">suka主题</a>,本来打算不折腾，没想到又折腾到manjaro了（不过manjaro的自定义程度是真的高）。好了，开始！</p>
-<a id="more"></a>
-<h2 id="下载suka"><a href="#下载suka" class="headerlink" title="下载suka"></a>下载suka</h2><h3 id="1-可以直接在官方的github的Realese页面下载"><a href="#1-可以直接在官方的github的Realese页面下载" class="headerlink" title="1.可以直接在官方的github的Realese页面下载"></a>1.可以直接在官方的github的Realese页面下载</h3><ul>
-<li><p><a href="https://github.com/SukkaW/hexo-theme-suka/releases/latest" target="_blank" rel="noopener">下载最新Realese版本</a></p>
-<pre><code>最新的释出版本，适合绝大部分用户</code></pre></li>
-<li><p><a href="https://github.com/SukkaW/hexo-theme-suka/archive/canary.zip" target="_blank" rel="noopener">下载 Canary 版本</a></p>
-<pre><code>包含最新的、尚在开发中的特性，可能不稳定；适合进阶用户和开发者。</code></pre></li>
-<li><p><a href="https://github.com/SukkaW/hexo-theme-suka/releases" target="_blank" rel="noopener">下载 其它 版本</a></p>
-<pre><code>你可以自己决定想要使用的版本；部分版本可能不再提供技术支持。</code></pre><p>  <img src="https://s2.ax1x.com/2020/01/03/lUlMCQ.png" alt="lUlMCQ.png"></p>
-</li>
-</ul>
-<h3 id="2-你可以自己决定想要使用的分支；使用-Git-下载「Suka」以后还可以使用-git-pull-更新「Suka」"><a href="#2-你可以自己决定想要使用的分支；使用-Git-下载「Suka」以后还可以使用-git-pull-更新「Suka」" class="headerlink" title="2.你可以自己决定想要使用的分支；使用 Git 下载「Suka」以后还可以使用 git pull 更新「Suka」"></a>2.你可以自己决定想要使用的分支；使用 Git 下载「Suka」以后还可以使用 git pull 更新「Suka」</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/SukkaW/hexo-theme-suka.git suka</span><br><span class="line"><span class="built_in">cd</span> suka</span><br><span class="line">git checkout &#123;branch/tags name/commit <span class="built_in">hash</span>&#125;</span><br></pre></td></tr></table></figure>
+                <h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="第一次提交远程仓库"><a href="#第一次提交远程仓库" class="headerlink" title="第一次提交远程仓库"></a>第一次提交远程仓库</h3><p>切换到要提交的文件根目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin https://github.com/ciaranhunt/test3.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 
-<h2 id="安装suka"><a href="#安装suka" class="headerlink" title="安装suka"></a>安装suka</h2><p>和其他主题不同，安装「Suka」需要额外的步骤；前往「Suka」主题目录下执行 npm install –production 指令安装「Suka」运行时所必须的依赖。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/suka</span><br><span class="line">npm install --production</span><br></pre></td></tr></table></figure>
+<h4 id="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"><a href="#更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支" class="headerlink" title="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"></a>更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</h4><p>解决方案：需要先获取远端更新并与本地合并,再git push</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/miaoihan/weibo.git</span><br><span class="line">git fetch origin //获取远程更新</span><br><span class="line">git merge origin/master //把更新的内容合并到本地分支</span><br></pre></td></tr></table></figure>
 
-<p>同时你需要把「Suka」主题目录下的 _config.example.yml 复制一份并把副本重命名为 _config.yml。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -i _config.example.yml _config.yml</span><br></pre></td></tr></table></figure>
+<p>上面的名字，和*.git改成自己的</p>
 
-<p>然后回到站点根目录，执行：  </p>
-<p><code>bash cat /themes/suka/site_config.yml &gt;&gt; _config.yml</code><br>现在你的 <strong>站点配置文件</strong> 应该是这样:<br><img src="https://s2.ax1x.com/2020/01/03/lUltET.png" alt="lUltET.png"></p>
-<h2 id="运行suka"><a href="#运行suka" class="headerlink" title="运行suka"></a>运行suka</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="更新suka"><a href="#更新suka" class="headerlink" title="更新suka"></a>更新suka</h2><p>如果你是在 版本发布页 下载并安装的「Suka」，那么你需要备份你的 主题备份文件，然后将旧的主题文件夹命名为 <strong>suka-old</strong>，将下载的新版本「Suka」重命名为 <strong>suka</strong>，根据更新日志的指导迁移旧的 主题配置文件 到新的 主题配置文件 中。测试通过后你可以将 <strong>suka-old</strong> 删除。</p>
-<p>如果你使用 <strong>Git</strong> 安装的「Suka」，你可以直接在主题文件夹下运行 <strong>git pull</strong> 更新主题，并把备份之前的 主题配置文件 重命名为 <strong>_config.old.yml</strong>，复制一份<strong>_config.example.yml</strong> 并重命名为 <strong>_config.yml</strong>。从 <strong>_config.old.yml</strong> 迁移你的配置到新的 <strong>_config.yml</strong>测试通过后你可以将 <strong>_config.old.yml</strong> 删除。</p>
-<pre><code>注意:一定要备份一下</code></pre><h2 id="Butterfly主题"><a href="#Butterfly主题" class="headerlink" title="Butterfly主题"></a>Butterfly主题</h2><h3 id="平滑升级"><a href="#平滑升级" class="headerlink" title="平滑升级"></a>平滑升级</h3><p>为了主题的平滑升级, Butterfly使用了data files特性。</p>
-<p>推荐把主题默认的配置文件_config.yml复制到Hexo工作目录下的source/_data/butterfly.yml，如果source/_data的目录不存在那就创建一个。</p>
-<pre><code>注意，如果你创建了butterfly.yml,它将会替换主题默认配置文件_config.yml里的配置项( 不是合并而是替换 ),之后你就只需要通过git pull的方式就可以平滑地升级theme-butterfly了。</code></pre><h3 id="Page-Front-matter"><a href="#Page-Front-matter" class="headerlink" title="Page Front-matter"></a>Page Front-matter</h3><pre><code>--- 
-    title: 
-    date: 
-    tags: 
-    categories: 
-    keywords: 
-    description: 
-    top_img: （除非特定需要，可以不写）
-    comments是否显示评论（除非设置false,可以不写）
-    cover:缩略图
-    toc:是否显示toc （除非特定文章设置，可以不写）
-    toc_number:是否显示toc数字（除非特定文章设置，可以不写）
-    copyright:是否显示版权（除非特定文章设置，可以不写）
-    mathjax: 
-    katex: 
-    hide: 
----</code></pre>
             </div>
             <hr/>
 
@@ -552,7 +515,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2019/12/31/geng-huan-hexo-zhu-ti/">https://ciaranhunt.github.io/2019/12/31/geng-huan-hexo-zhu-ti/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/04/github/github-xiang-guan-cao-zuo/">https://ciaranhunt.github.io/2020/01/04/github/github-xiang-guan-cao-zuo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,8 +553,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">-hexo</span>
+                                <a href="/tags/Github/">
+                                    <span class="chip bg-color">-Github</span>
                                 </a>
                             
                         </div>
@@ -761,31 +724,33 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/12/31/an-zhuang-hexo/">
+                <a href="/2020/01/05/ri-chang/a-li-yun/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="安装hexo">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="冲动是魔鬼">
                         
-                        <span class="card-title">安装hexo</span>
+                        <span class="card-title">冲动是魔鬼</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言我是参考简书这位老哥的教程的，算是很详细的了，主要是刚用 deepin（linux）不太熟悉，所以这位老哥对于我这种小白已经够详细了。中间有一个Github Page配置没有写，所以比较模糊。这也是我第一次使用博客，就以这个作为起点。这
+                            啰嗦一大早起来就冲动消费，显示域名买错了，接着云服务器也没错了，查了一下，域名很明显不能退款，但是服务器刚了一波客服，成功退款了.（感觉说啥也没说就退了，难道是家大业大？，不在乎这点蚊子腿肉？）
+
+感觉阿里服务还是可以的，仅凭它给我退款了，
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-31
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-05
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
-                                    -技术向
+                            <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
+                                    -日常
                                 </a>
                             
                             
@@ -795,8 +760,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">-hexo</span>
+                    <a href="/tags/%E9%98%BF%E9%87%8C/">
+                        <span class="chip bg-color">-阿里</span>
                     </a>
                     
                 </div>
@@ -807,29 +772,37 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/31/geng-huan-hexo-zhu-ti/">
+                <a href="/2020/01/02/java-fu-xi/dui-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="更换hexo主题">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="一切都是对象">
                         
-                        <span class="card-title">更换hexo主题</span>
+                        <span class="card-title">一切都是对象</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言刚安装hexo的时候就已经安装了Next主题，之后又想安装其它主题，找到了suka主题,本来打算不折腾，没想到又折腾到manjaro了（不过manjaro的自定义程度是真的高）。好了，开始！
+                            引言“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”–Luduing Wittgerstein
 
-下载suka1.可以直接在官方的githu
+
+用引用操纵对象尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.
+基本类型
+
+
+基本类型
+大小
+最小值
+最大值
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-02
                             </span>
                         <span class="publish-author">
                             
@@ -843,12 +816,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">-hexo</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">-Java</span>
                     </a>
                     
                 </div>

@@ -4,14 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="IO流, Ciaran Hunt">
-    <meta name="description" content="前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
+    <meta name="keywords" content="idea的使用, Ciaran Hunt">
+    <meta name="description" content="jetbrains的一些相关操作
 
-
-流的分类
-数据单位不同：8bit（字节流）、16bit（字符流）
-流向不同：输入流、输出流
-角色不同：节点流、处理">
+hosts文件12341.2.3.4 account.jetbrains.com1.2.3.4 http:&amp;#x2F;&amp;#x2F;www.jetbrains.com1.2.3.4 www-weighted">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>IO流 | Ciaran Hunt</title>
+    <title>idea的使用 | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">IO流</h1>
+                    <h1 class="description center-align post-title">idea的使用</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +427,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">-Java</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">-java</span>
                             </a>
                         
                     </div>
@@ -443,8 +439,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
-                                -技术向
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6/" class="post-category">
+                                -软件
                             </a>
                         
                     </div>
@@ -456,21 +452,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-19
+                    2020-01-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-20
+                    2020-01-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    518
+                    192
                 </div>
                 
 
@@ -488,29 +484,48 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>好色风流，不是冤家不聚头。<br>只为淫人妇，难保妻儿否，<br>嬉戏眼前谋，孽满身后，<br>报应从头，万恶淫为首，<br>因此上媒色邪淫一笔勾。</strong></p>
-<a id="more"></a>
+                <h2 id="jetbrains的一些相关操作"><a href="#jetbrains的一些相关操作" class="headerlink" title="jetbrains的一些相关操作"></a>jetbrains的一些相关操作</h2><a id="more"></a>
 
-<h2 id="流的分类"><a href="#流的分类" class="headerlink" title="流的分类"></a>流的分类</h2><ul>
-<li>数据单位不同：8bit（字节流）、16bit（字符流）</li>
-<li>流向不同：输入流、输出流</li>
-<li>角色不同：节点流、处理流<br><img src="https://s2.ax1x.com/2020/01/19/1CHc8K.png" alt="1CHc8K.png"></li>
-</ul>
-<h3 id="IO流体系"><a href="#IO流体系" class="headerlink" title="IO流体系"></a>IO流体系</h3><p><a href="https://imgchr.com/i/1CHWKe" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/19/1CHWKe.md.png" alt="1CHWKe.md.png"></a></p>
-<ul>
-<li>对于非文本文件，字节流用byte数组来存</li>
-<li>对于文本文件，字符流用char数组来存</li>
-</ul>
-<h2 id="输入流"><a href="#输入流" class="headerlink" title="输入流"></a>输入流</h2><p>读取外部数据（磁盘等存储设备）到内存中。  </p>
-<h2 id="输出流"><a href="#输出流" class="headerlink" title="输出流"></a>输出流</h2><p>读取内存数据到磁盘等存储设备</p>
-<h2 id="实现字节文件复制"><a href="#实现字节文件复制" class="headerlink" title="实现字节文件复制"></a>实现字节文件复制</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">File srcFile = <span class="keyword">new</span> File(<span class="string">"test2.txt"</span>);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">"test3.txt"</span>);</span><br><span class="line"></span><br><span class="line">FileReader fileReader = <span class="keyword">null</span>;</span><br><span class="line">FileWriter fileWriter = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileReader = <span class="keyword">new</span> FileReader(srcFile);</span><br><span class="line">    fileWriter = <span class="keyword">new</span> FileWriter(desFile);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">char</span>[] cbuf=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">5</span>];</span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="keyword">while</span> ((len=fileReader.read(cbuf))!=-<span class="number">1</span>)&#123;</span><br><span class="line">        fileWriter.write(cbuf,<span class="number">0</span>,len);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">assert</span> fileWriter != <span class="keyword">null</span>;</span><br><span class="line">        fileWriter.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        fileReader.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="hosts文件"><a href="#hosts文件" class="headerlink" title="hosts文件"></a>hosts文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.2.3.4 account.jetbrains.com</span><br><span class="line">1.2.3.4 http:&#x2F;&#x2F;www.jetbrains.com</span><br><span class="line">1.2.3.4 www-weighted.jetbrains.com</span><br><span class="line">0.0.0.0 account.jetbrains.com</span><br></pre></td></tr></table></figure>
 
-<h2 id="缓冲流"><a href="#缓冲流" class="headerlink" title="缓冲流"></a>缓冲流</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">File srcFile = <span class="keyword">new</span> File(<span class="string">"imgtest.jpg"</span>);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">"imgtest2.jpg"</span>);</span><br><span class="line"></span><br><span class="line">FileInputStream fileInputStream = <span class="keyword">null</span>;</span><br><span class="line">FileOutputStream fileOutputStream=<span class="keyword">null</span>;</span><br><span class="line">BufferedInputStream bufferedInputStream=<span class="keyword">null</span>;</span><br><span class="line">BufferedOutputStream bufferedOutputStream=<span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">fileInputStream = <span class="keyword">new</span> FileInputStream(srcFile);</span><br><span class="line">fileOutputStream = <span class="keyword">new</span> FileOutputStream(desFile);</span><br><span class="line"></span><br><span class="line">bufferedInputStream=<span class="keyword">new</span> BufferedInputStream(fileInputStream);</span><br><span class="line">bufferedOutputStream=<span class="keyword">new</span> BufferedOutputStream(fileOutputStream);</span><br><span class="line"></span><br><span class="line"><span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span> ((len = bufferedInputStream.read(buffer)) != -<span class="number">1</span>) &#123;</span><br><span class="line">    bufferedOutputStream.write(buffer, <span class="number">0</span>, len);</span><br><span class="line">&#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">assert</span> bufferedOutputStream != <span class="keyword">null</span>;</span><br><span class="line">    bufferedOutputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    bufferedInputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileOutputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileInputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="转换流"><a href="#转换流" class="headerlink" title="转换流"></a>转换流</h2><ul>
-<li>转换流java.io.InputStreamReader，是Reader的子类，是从字节流到字符流的桥梁。它读取字节，并使用指定的字节集将其<strong>解码</strong>为字符。它的字符集可以由名称指定，也可以接受平台的默认字符集。</li>
-<li>转换流java.io.OutputStreamWriter ，是Writer的子类，是从字符流到字节流的桥梁。使用指定的字符集讲字符<strong>编码</strong>为字节。它的字符集可以由名称指定，也可以接受平台的默认字符集。</li>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
+<li>外观主题：material theme ui</li>
+<li>字体:source code pro medium</li>
+<li>大小：20</li>
+<li>设置ctrl+鼠标调节字体大小（位于editor&gt;general的顶部）<br><a href="https://imgchr.com/i/lgB1KO" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/08/lgB1KO.md.png" alt="lgB1KO.md.png"></a></li>
+<li>展示方法的用途：documents（位于editor&gt;general的底部）<br><a href="https://imgchr.com/i/lgB8qe" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/08/lgB8qe.png" alt="lgB8qe.png"></a></li>
+<li>添加方法间的分割线<br><a href="https://imgchr.com/i/lgBQxK" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/08/lgBQxK.png" alt="lgBQxK.png"></a></li>
+<li>忽略大小匹配—-取出match case的勾选</li>
+<li>让顶部的打开文件过多时多行显示<br><img src="https://s2.ax1x.com/2020/01/08/lgDuwQ.png" alt="lgDuwQ.png"></li>
+<li>修改注释的字体相关<br><img src="https://s2.ax1x.com/2020/01/08/lgDzpq.png" alt="lgDzpq.png"></li>
+<li>新建文件的生成注释<br><img src="https://s2.ax1x.com/2020/01/08/lgsAr8.png" alt="lgsAr8.png"></li>
+<li>设置自动编译<br><img src="https://s2.ax1x.com/2020/01/08/lgsQx0.png" alt="lgsQx0.png"></li>
 </ul>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p><a href="https://imgchr.com/i/lRD86P" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRD86P.md.png" alt="lRD86P.md.png"></a><br><a href="https://imgchr.com/i/lRD1SI" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRD1SI.md.png" alt="lRD1SI.md.png"></a><br><a href="https://imgchr.com/i/lRDGOf" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRDGOf.png" alt="lRDGOf.png"></a><br><a href="https://imgchr.com/i/lRD3lt" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRD3lt.md.png" alt="lRD3lt.md.png"></a><br><a href="https://imgchr.com/i/lRDQfA" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRDQfA.md.png" alt="lRDQfA.md.png"></a><br><a href="https://imgchr.com/i/lRDYm8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRDYm8.md.png" alt="lRDYm8.md.png"></a><br><a href="https://imgchr.com/i/lRDt0S" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/09/lRDt0S.md.png" alt="lRDt0S.md.png"></a></p>
+<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">代码提示</td>
+<td>Ctrl+ 空格</td>
+</tr>
+<tr>
+<td align="center">参数提示</td>
+<td>Ctrl+ p</td>
+</tr>
+<tr>
+<td align="center">代码包围</td>
+<td>Ctrl+ alt+t</td>
+</tr>
+<tr>
+<td align="center">抽取方法</td>
+<td>Ctrl+ alt+m</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -536,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/">https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/08/ruan-jian/jetbrians/">https://ciaranhunt.github.io/2020/01/08/ruan-jian/jetbrians/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -574,8 +589,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">-Java</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">-java</span>
                                 </a>
                             
                         </div>
@@ -745,79 +760,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/20/qian-duan/html-css/html-xue-xi/">
+                <a href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="HTML学习">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="开山篇.md">
                         
-                        <span class="card-title">HTML学习</span>
+                        <span class="card-title">开山篇.md</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
-HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
-HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTM
+                            前言寒假安装了几个Linux发行版，有openSUSE、manjaro（kde、gnome，xfce）、nitrux和elementrayos，几经折腾后，还是选择了邪教–manjaro。之后就想系统地学习一下Linux，打算Linux做主
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-09
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
-                                    -技术向
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">-HTML</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="进程管理">
-                        
-                        <span class="card-title">进程管理</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            前言在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。
-
-
-ps指令1234常用的选项：  -a 显示当前终端的所有进程 
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-14
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -835,6 +796,57 @@ ps指令1234常用的选项：  -a 显示当前终端的所有进程
                     
                     <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
                         <span class="chip bg-color">-系统 -Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/01/05/ri-chang/a-li-yun/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="冲动是魔鬼">
+                        
+                        <span class="card-title">冲动是魔鬼</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            啰嗦一大早起来就冲动消费，显示域名买错了，接着云服务器也没错了，查了一下，域名很明显不能退款，但是服务器刚了一波客服，成功退款了.（感觉说啥也没说就退了，难道是家大业大？，不在乎这点蚊子腿肉？）
+
+感觉阿里服务还是可以的，仅凭它给我退款了，
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
+                                    -日常
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%98%BF%E9%87%8C/">
+                        <span class="chip bg-color">-阿里</span>
                     </a>
                     
                 </div>

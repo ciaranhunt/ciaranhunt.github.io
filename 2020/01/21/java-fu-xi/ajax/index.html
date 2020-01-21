@@ -4,14 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="IO流, Ciaran Hunt">
-    <meta name="description" content="前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
-
-
-流的分类
-数据单位不同：8bit（字节流）、16bit（字符流）
-流向不同：输入流、输出流
-角色不同：节点流、处理">
+    <meta name="keywords" content="Ajax, Ciaran Hunt">
+    <meta name="description" content="前言AJAX = 异步 JavaScript 和 XML。
+AJAX 是一种用于创建快速动态网页的技术。
+通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>IO流 | Ciaran Hunt</title>
+    <title>Ajax | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">IO流</h1>
+                    <h1 class="description center-align post-title">Ajax</h1>
                 </div>
             </div>
         </div>
@@ -456,21 +452,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-19
+                    2020-01-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-20
+                    2020-01-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    518
+                    290
                 </div>
                 
 
@@ -488,29 +484,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>好色风流，不是冤家不聚头。<br>只为淫人妇，难保妻儿否，<br>嬉戏眼前谋，孽满身后，<br>报应从头，万恶淫为首，<br>因此上媒色邪淫一笔勾。</strong></p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>AJAX = 异步 JavaScript 和 XML。</p>
+<p>AJAX 是一种用于创建快速动态网页的技术。</p>
+<p>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<p>传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。</p>
+<p>在 2005 年，Google 通过其 Google Suggest 使 AJAX 变得流行起来。</p>
 <a id="more"></a>
 
-<h2 id="流的分类"><a href="#流的分类" class="headerlink" title="流的分类"></a>流的分类</h2><ul>
-<li>数据单位不同：8bit（字节流）、16bit（字符流）</li>
-<li>流向不同：输入流、输出流</li>
-<li>角色不同：节点流、处理流<br><img src="https://s2.ax1x.com/2020/01/19/1CHc8K.png" alt="1CHc8K.png"></li>
-</ul>
-<h3 id="IO流体系"><a href="#IO流体系" class="headerlink" title="IO流体系"></a>IO流体系</h3><p><a href="https://imgchr.com/i/1CHWKe" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/19/1CHWKe.md.png" alt="1CHWKe.md.png"></a></p>
-<ul>
-<li>对于非文本文件，字节流用byte数组来存</li>
-<li>对于文本文件，字符流用char数组来存</li>
-</ul>
-<h2 id="输入流"><a href="#输入流" class="headerlink" title="输入流"></a>输入流</h2><p>读取外部数据（磁盘等存储设备）到内存中。  </p>
-<h2 id="输出流"><a href="#输出流" class="headerlink" title="输出流"></a>输出流</h2><p>读取内存数据到磁盘等存储设备</p>
-<h2 id="实现字节文件复制"><a href="#实现字节文件复制" class="headerlink" title="实现字节文件复制"></a>实现字节文件复制</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">File srcFile = <span class="keyword">new</span> File(<span class="string">"test2.txt"</span>);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">"test3.txt"</span>);</span><br><span class="line"></span><br><span class="line">FileReader fileReader = <span class="keyword">null</span>;</span><br><span class="line">FileWriter fileWriter = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileReader = <span class="keyword">new</span> FileReader(srcFile);</span><br><span class="line">    fileWriter = <span class="keyword">new</span> FileWriter(desFile);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">char</span>[] cbuf=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">5</span>];</span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="keyword">while</span> ((len=fileReader.read(cbuf))!=-<span class="number">1</span>)&#123;</span><br><span class="line">        fileWriter.write(cbuf,<span class="number">0</span>,len);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">assert</span> fileWriter != <span class="keyword">null</span>;</span><br><span class="line">        fileWriter.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        fileReader.close();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="XMLHttpRequest"><a href="#XMLHttpRequest" class="headerlink" title="XMLHttpRequest"></a>XMLHttpRequest</h2><h3 id="向服务器发送请求"><a href="#向服务器发送请求" class="headerlink" title="向服务器发送请求"></a>向服务器发送请求</h3><p><a href="https://imgchr.com/i/1FQufH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQufH.md.png" alt="1FQufH.md.png"></a></p>
+<h3 id="服务器相应"><a href="#服务器相应" class="headerlink" title="服务器相应"></a>服务器相应</h3><p><a href="https://imgchr.com/i/1FQnte" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQnte.md.png" alt="1FQnte.md.png"></a></p>
+<h3 id="onreadystatechange-事件"><a href="#onreadystatechange-事件" class="headerlink" title="onreadystatechange 事件"></a>onreadystatechange 事件</h3><p><a href="https://imgchr.com/i/1FQmkD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQmkD.md.png" alt="1FQmkD.md.png"></a></p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取元素对象，并修改点击事件</span></span><br><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">"a"</span>)[<span class="number">0</span>].onclick=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//获取XMLHttpRequest对象</span></span><br><span class="line">    <span class="keyword">var</span> request=<span class="keyword">new</span> XMLHttpRequest;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//设置字符串</span></span><br><span class="line">    <span class="keyword">var</span> method=<span class="string">"GET"</span>;</span><br><span class="line">    <span class="keyword">var</span> url=<span class="keyword">this</span>.href;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//规定请求类型</span></span><br><span class="line">    request.open(method,url);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    request.send(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//为XMLHttpRequest对象添加onreadystatechange函数</span></span><br><span class="line">    request.onreadystatechange=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(request.readyState==<span class="number">4</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(request.status==<span class="number">200</span>||request.status==<span class="number">304</span>)&#123;</span><br><span class="line">        alert(request.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//取消默认行为</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="缓冲流"><a href="#缓冲流" class="headerlink" title="缓冲流"></a>缓冲流</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">File srcFile = <span class="keyword">new</span> File(<span class="string">"imgtest.jpg"</span>);</span><br><span class="line">File desFile = <span class="keyword">new</span> File(<span class="string">"imgtest2.jpg"</span>);</span><br><span class="line"></span><br><span class="line">FileInputStream fileInputStream = <span class="keyword">null</span>;</span><br><span class="line">FileOutputStream fileOutputStream=<span class="keyword">null</span>;</span><br><span class="line">BufferedInputStream bufferedInputStream=<span class="keyword">null</span>;</span><br><span class="line">BufferedOutputStream bufferedOutputStream=<span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">fileInputStream = <span class="keyword">new</span> FileInputStream(srcFile);</span><br><span class="line">fileOutputStream = <span class="keyword">new</span> FileOutputStream(desFile);</span><br><span class="line"></span><br><span class="line">bufferedInputStream=<span class="keyword">new</span> BufferedInputStream(fileInputStream);</span><br><span class="line">bufferedOutputStream=<span class="keyword">new</span> BufferedOutputStream(fileOutputStream);</span><br><span class="line"></span><br><span class="line"><span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">5</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">while</span> ((len = bufferedInputStream.read(buffer)) != -<span class="number">1</span>) &#123;</span><br><span class="line">    bufferedOutputStream.write(buffer, <span class="number">0</span>, len);</span><br><span class="line">&#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">assert</span> bufferedOutputStream != <span class="keyword">null</span>;</span><br><span class="line">    bufferedOutputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    bufferedInputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileOutputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    fileInputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="转换流"><a href="#转换流" class="headerlink" title="转换流"></a>转换流</h2><ul>
-<li>转换流java.io.InputStreamReader，是Reader的子类，是从字节流到字符流的桥梁。它读取字节，并使用指定的字节集将其<strong>解码</strong>为字符。它的字符集可以由名称指定，也可以接受平台的默认字符集。</li>
-<li>转换流java.io.OutputStreamWriter ，是Writer的子类，是从字符流到字节流的桥梁。使用指定的字符集讲字符<strong>编码</strong>为字节。它的字符集可以由名称指定，也可以接受平台的默认字符集。</li>
+<h3 id="数据格式"><a href="#数据格式" class="headerlink" title="数据格式"></a>数据格式</h3><ol>
+<li>json</li>
+<li>xml</li>
+<li>html<ul>
+<li>使用innerHTML操作</li>
 </ul>
+</li>
+</ol>
+<h2 id="jQuery中"><a href="#jQuery中" class="headerlink" title="jQuery中"></a>jQuery中</h2><p><img src="https://s2.ax1x.com/2020/01/21/1FrR6x.png" alt="1FrR6x.png"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"a"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> url=<span class="keyword">this</span>.href;</span><br><span class="line">    <span class="comment">//清除缓存的作用</span></span><br><span class="line">    <span class="keyword">var</span> args=&#123;<span class="string">"time"</span>:<span class="keyword">new</span> <span class="built_in">Date</span>()&#125;;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#d1"</span>).load(url,args);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
             </div>
             <hr/>
@@ -536,7 +531,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/">https://ciaranhunt.github.io/2020/01/19/java-fu-xi/io-liu/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/21/java-fu-xi/ajax/">https://ciaranhunt.github.io/2020/01/21/java-fu-xi/ajax/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -741,9 +736,62 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/01/21/java-fu-xi/ajax/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Ajax">
+                        
+                        <span class="card-title">Ajax</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            前言AJAX = 异步 JavaScript 和 XML。
+AJAX 是一种用于创建快速动态网页的技术。
+通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
+                                    -技术向
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">-Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/01/20/qian-duan/html-css/html-xue-xi/">
                     <div class="card-image">
@@ -763,9 +811,9 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -783,58 +831,6 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                     
                     <a href="/tags/HTML/">
                         <span class="chip bg-color">-HTML</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="进程管理">
-                        
-                        <span class="card-title">进程管理</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            前言在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。
-
-
-ps指令1234常用的选项：  -a 显示当前终端的所有进程 
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
-                                    -技术向
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
-                        <span class="chip bg-color">-系统 -Linux</span>
                     </a>
                     
                 </div>

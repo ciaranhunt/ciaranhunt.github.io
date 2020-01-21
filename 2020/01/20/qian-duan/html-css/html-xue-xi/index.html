@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GitHub如何配置SSH Key, Ciaran Hunt">
-    <meta name="description" content="https://github.com/ciaranhunt/ciaranhunt.github.io.git
-git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同一个项目，">
+    <meta name="keywords" content="HTML学习, Ciaran Hunt">
+    <meta name="description" content="前言HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
+HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
+HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTM">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>GitHub如何配置SSH Key | Ciaran Hunt</title>
+    <title>HTML学习 | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +305,12 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GitHub如何配置SSH Key</h1>
+                    <h1 class="description center-align post-title">HTML学习</h1>
                 </div>
             </div>
         </div>
@@ -426,8 +427,8 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Github/">
-                                <span class="chip bg-color">-Github</span>
+                            <a href="/tags/HTML/">
+                                <span class="chip bg-color">-HTML</span>
                             </a>
                         
                     </div>
@@ -451,21 +452,21 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-02
+                    2020-01-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-08
+                    2020-01-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    402
+                    397
                 </div>
                 
 
@@ -483,30 +484,22 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>https://github.com/ciaranhunt/ciaranhunt.github.io.git
-git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？<br>前者是<strong>https url</strong>直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置，永久使用呢？当然，所以有了第二种地址，也就是<strong>SSH URL</strong>，那如何配置就是本文要分享的内容。<br>GitHub配置SSH Key的目的是为了帮助我们在通过git提交代码是，不需要繁琐的验证过程，简化操作流程。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。</p>
+<p>HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。</p>
+<p>HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。</p>
 <a id="more"></a>
 
-<h2 id="设置git的user-name和email"><a href="#设置git的user-name和email" class="headerlink" title="设置git的user name和email"></a>设置git的user name和email</h2><p>如果你是第一次使用，或者还没有配置过的话需要操作一下命令，自行替换相应字段。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email  <span class="string">"your@example.com"</span></span><br></pre></td></tr></table></figure>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="1-实体"><a href="#1-实体" class="headerlink" title="1.实体"></a>1.实体</h3><p>在 HTML 中，某些字符是预留的。</p>
+<p>在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。</p>
+<p>如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。<br>也就是转义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">语法：&amp;实体的名字；</span><br><span class="line">常用的实体：  </span><br><span class="line">    空格---&amp;nbsp;</span><br><span class="line">    小于号---&lt;</span><br><span class="line">    大于号---&gt;</span><br><span class="line">    版权（copyright）---&amp;copy;</span><br></pre></td></tr></table></figure>
 
-<p>说明：git config –list 查看当前Git环境所有配置，还可以配置一些命令别名之类的.</p>
-<h2 id="检查是否存在SSH-Key"><a href="#检查是否存在SSH-Key" class="headerlink" title="检查是否存在SSH Key"></a>检查是否存在SSH Key</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ls</span><br><span class="line">或者</span><br><span class="line">ll</span><br></pre></td></tr></table></figure>
+<h3 id="2-图片-img标签"><a href="#2-图片-img标签" class="headerlink" title="2.图片-img标签"></a>2.图片-img标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://s2.ax1x.com/2020/01/04/ldzewq.md.jpg"</span> <span class="attr">alt</span>=<span class="string">"ldzewq.jpg"</span> <span class="attr">border</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key<br><img src="https://s2.ax1x.com/2020/01/03/lUlBvR.png" alt="lUlBvR.png"><br>如果没有SSH Key，则需要先生成一下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"571074750@qq.com"</span></span><br></pre></td></tr></table></figure>
+<p>属性：<br>    - src：指定图片地址<br>    - alt：指定图片描述<br>    - width：修改图片宽度<br>    - height：修改图片高度</p>
+<h3 id="3-meta标签"><a href="#3-meta标签" class="headerlink" title="3.meta标签"></a>3.meta标签</h3><p>作用：<br>    1. 设定字符集<br>    2. 描述网页内容，设定关键字<br>    3. 请求重定向  </p>
+<h3 id="4-XHTML语法规范"><a href="#4-XHTML语法规范" class="headerlink" title="4.XHTML语法规范"></a>4.XHTML语法规范</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">文档结构</span><br><span class="line">    XHTML DOCTYPE 是强制性的</span><br><span class="line">    &lt;html&gt; 中的 XML namespace 属性是强制性的</span><br><span class="line">    &lt;html&gt;、&lt;head&gt;、&lt;title&gt; 以及 &lt;body&gt; 也是强制性的</span><br><span class="line">元素语法</span><br><span class="line">    XHTML 元素必须正确嵌套</span><br><span class="line">    XHTML 元素必须始终关闭</span><br><span class="line">    XHTML 元素必须小写</span><br><span class="line">    XHTML 文档必须有一个根元素</span><br><span class="line">属性语法</span><br><span class="line">    XHTML 属性必须使用小写</span><br><span class="line">    XHTML 属性值必须用引号包围</span><br><span class="line">    XHTML 属性最小化也是禁止的</span><br></pre></td></tr></table></figure>
 
-<h2 id="获取SSH-Key"><a href="#获取SSH-Key" class="headerlink" title="获取SSH Key"></a>获取SSH Key</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s2.ax1x.com/2020/01/03/lUlyb6.png" alt="lUlyb6.png"></p>
-<h2 id="GitHub添加SSH-Key"><a href="#GitHub添加SSH-Key" class="headerlink" title="GitHub添加SSH Key"></a>GitHub添加SSH Key</h2><ol>
-<li>GitHub点击用户头像，选择setting</li>
-<li>选择SSH and GPGkeys</li>
-<li>新建一个SSH Key  </li>
-</ol>
-<p>取个名字，把之前拷贝的秘钥复制进去，添加就好啦。</p>
-<h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>测试是否成功配置SSH Key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line">//运行结果出现类似如下</span><br><span class="line">Hi xiangshuo1992! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
             </div>
             <hr/>
 
@@ -531,7 +524,7 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/02/githu-pei-zhi-ssh-key/">https://ciaranhunt.github.io/2020/01/02/githu-pei-zhi-ssh-key/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/20/qian-duan/html-css/html-xue-xi/">https://ciaranhunt.github.io/2020/01/20/qian-duan/html-css/html-xue-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -569,8 +562,8 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Github/">
-                                    <span class="chip bg-color">-Github</span>
+                                <a href="/tags/HTML/">
+                                    <span class="chip bg-color">-HTML</span>
                                 </a>
                             
                         </div>
@@ -740,29 +733,26 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/02/manjaro-qing-li-kong-jian/">
+                <a href="/2020/01/21/java-fu-xi/ajax/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="给你的manjaro清理空间腾出地方！">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Ajax">
                         
-                        <span class="card-title">给你的manjaro清理空间腾出地方！</span>
+                        <span class="card-title">Ajax</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用Arch Linux 时间长了，空间越来越少，不禁想到要清理一下空间。 我将清理的内容分成三部分，清理安装包缓存，清理孤立的软件包，以及清理日志。
-
-
-清理安装包缓存1sudo pacman -Scc
-
-不仅会删除未安装或旧版本的包文件
+                            前言AJAX = 异步 JavaScript 和 XML。
+AJAX 是一种用于创建快速动态网页的技术。
+通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
                         </span>
                         <span class="publish-author">
                             
@@ -779,8 +769,8 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
-                        <span class="chip bg-color">-系统 -Linux</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">-Java</span>
                     </a>
                     
                 </div>
@@ -794,24 +784,30 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/02/linux-xue-xi/ji-chu-pian/an-zhuang-linux-xi-tong/">
+                <a href="/2020/01/19/java-fu-xi/io-liu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="安装Linux系统">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="IO流">
                         
-                        <span class="card-title">安装Linux系统</span>
+                        <span class="card-title">IO流</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言考研之前就一直想装黑苹果,考完之后一顿折腾,每次进入安装界面都找不到磁盘,试了很多办法都不能奏效,只能作罢.作为开发人员,就想安装linux作为主力系统了.一开始感觉linux会比较难,就安装了deepin,装完之后感觉不太折腾,就安装
+                            前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
+
+
+流的分类
+数据单位不同：8bit（字节流）、16bit（字符流）
+流向不同：输入流、输出流
+角色不同：节点流、处理
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-19
                             </span>
                         <span class="publish-author">
                             
@@ -828,8 +824,8 @@ git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
-                        <span class="chip bg-color">-系统 -Linux</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">-Java</span>
                     </a>
                     
                 </div>
