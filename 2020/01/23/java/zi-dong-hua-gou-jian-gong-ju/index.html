@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML学习, Ciaran Hunt">
-    <meta name="description" content="前言HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
-HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
-HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTM">
+    <meta name="keywords" content="自动化构建工具--Maven, Ciaran Hunt">
+    <meta name="description" content="前言Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>HTML学习 | Ciaran Hunt</title>
+    <title>自动化构建工具--Maven | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,12 +303,12 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">HTML学习</h1>
+                    <h1 class="description center-align post-title">自动化构建工具--Maven</h1>
                 </div>
             </div>
         </div>
@@ -427,8 +425,8 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/HTML/">
-                                <span class="chip bg-color">-HTML</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">-Java</span>
                             </a>
                         
                     </div>
@@ -452,7 +450,7 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-20
+                    2020-01-23
                 </div>
                 
 
@@ -466,7 +464,7 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    689
+                    255
                 </div>
                 
 
@@ -484,48 +482,16 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。</p>
-<p>HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。</p>
-<p>HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven增加可重用性并负责建立相关的任务。</p>
 <a id="more"></a>
 
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="1-实体"><a href="#1-实体" class="headerlink" title="1.实体"></a>1.实体</h3><p>在 HTML 中，某些字符是预留的。</p>
-<p>在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。</p>
-<p>如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。<br>也就是转义。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">语法：&amp;实体的名字；</span><br><span class="line">常用的实体：  </span><br><span class="line">    空格---&amp;nbsp;</span><br><span class="line">    小于号---&lt;</span><br><span class="line">    大于号---&gt;</span><br><span class="line">    版权（copyright）---&amp;copy;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-图片-img标签"><a href="#2-图片-img标签" class="headerlink" title="2.图片-img标签"></a>2.图片-img标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://s2.ax1x.com/2020/01/04/ldzewq.md.jpg"</span> <span class="attr">alt</span>=<span class="string">"ldzewq.jpg"</span> <span class="attr">border</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>属性：<br>    - src：指定图片地址<br>    - alt：指定图片描述<br>    - width：修改图片宽度<br>    - height：修改图片高度</p>
-<h3 id="3-meta标签"><a href="#3-meta标签" class="headerlink" title="3.meta标签"></a>3.meta标签</h3><p>作用：<br>    1. 设定字符集<br>    2. 描述网页内容，设定关键字<br>    3. 请求重定向  </p>
-<h3 id="4-XHTML语法规范"><a href="#4-XHTML语法规范" class="headerlink" title="4.XHTML语法规范"></a>4.XHTML语法规范</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">文档结构</span><br><span class="line">    XHTML DOCTYPE 是强制性的</span><br><span class="line">    &lt;html&gt; 中的 XML namespace 属性是强制性的</span><br><span class="line">    &lt;html&gt;、&lt;head&gt;、&lt;title&gt; 以及 &lt;body&gt; 也是强制性的</span><br><span class="line">元素语法</span><br><span class="line">    XHTML 元素必须正确嵌套</span><br><span class="line">    XHTML 元素必须始终关闭</span><br><span class="line">    XHTML 元素必须小写</span><br><span class="line">    XHTML 文档必须有一个根元素</span><br><span class="line">属性语法</span><br><span class="line">    XHTML 属性必须使用小写</span><br><span class="line">    XHTML 属性值必须用引号包围</span><br><span class="line">    XHTML 属性最小化也是禁止的</span><br></pre></td></tr></table></figure>
-
-<h3 id="内联框架–iframe"><a href="#内联框架–iframe" class="headerlink" title="内联框架–iframe"></a>内联框架–iframe</h3><p>在页面引用另一个页面的元素，不推荐使用，因为搜索引擎不会检索。</p>
-<h3 id="超链接–a"><a href="#超链接–a" class="headerlink" title="超链接–a"></a>超链接–a</h3><p>常用的属性：<br>    - href：目标地址<br>    - target：打开的方式</p>
-<h3 id="块元素与内联元素"><a href="#块元素与内联元素" class="headerlink" title="块元素与内联元素"></a>块元素与内联元素</h3><ul>
-<li>块元素：div、p、h1、h2、h3等，独占一行</li>
-<li>内联元素：span，只占自身元素大小，会自动换行<br>一般情况是块元素包含内联元素</li>
-</ul>
-<h2 id="核心技术"><a href="#核心技术" class="headerlink" title="核心技术"></a>核心技术</h2><h3 id="attr与prop"><a href="#attr与prop" class="headerlink" title="attr与prop"></a>attr与prop</h3><ul>
-<li><p><font color="red"><strong>attribute</strong></font><br>包括html<strong>预定义</strong>属性与html<strong>自定义</strong>属性,是<strong>HTML</strong>标签的属性。</p>
-</li>
-<li><p><font color="red"><strong>property</strong></font>是<strong>js</strong>原生对象的直接属性。</p>
-</li>
-</ul>
-<p>每一个预定义的attribute都有一个property对象与之对应。</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>每个Java项目的目录结构都没有一个统一的标准，配置文件到处都是，单元测试代码到底应该放在那里也没有一个权威的规范。</p>
+<p>因此，我们就要用到Maven（使用Ant也可以，不过编写Ant的xml脚本比较麻烦）—-一个项目管理工具。</p>
+<p>Maven主要做了两件事：</p>
 <ul>
-<li><p>对于非布尔值属性，不管什么情况  property和attribute都会同步。</p>
-</li>
-<li><p>对于布尔值属性</p>
-<ol>
-<li>改变 property时,不会同步attribute  </li>
-<li>在没有动过property时attribute会同步property，一旦动过property，attribute不会同步property</li>
-</ol>
-</li>
+<li>统一开发规范与工具</li>
+<li>统一管理jar包</li>
 </ul>
-<p>浏览器与用户操作的都是property</p>
-<h3 id="那么，什么时候使用attr-，什么时候使用prop"><a href="#那么，什么时候使用attr-，什么时候使用prop" class="headerlink" title="那么，什么时候使用attr()，什么时候使用prop()"></a>那么，什么时候使用attr()，什么时候使用prop()</h3><p>1、是有true,false两个属性值使用prop()，prop多适用于复选框全选和反选的、下拉框、禁用、单选情况。</p>
-<p>2、其他属性操作则使用attr();</p>
 
             </div>
             <hr/>
@@ -551,7 +517,7 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/20/qian-duan/html-css/html-xue-xi/">https://ciaranhunt.github.io/2020/01/20/qian-duan/html-css/html-xue-xi/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/">https://ciaranhunt.github.io/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,8 +555,8 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/HTML/">
-                                    <span class="chip bg-color">-HTML</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">-Java</span>
                                 </a>
                             
                         </div>
@@ -756,9 +722,60 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="自动化构建工具--Maven">
+                        
+                        <span class="card-title">自动化构建工具--Maven</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            前言Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
+                                    -技术向
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">-Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/01/21/java/ajax/">
                     <div class="card-image">
@@ -778,63 +795,8 @@ AJAX 是一种用于创建快速动态网页的技术。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" class="post-category">
-                                    -技术向
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">-Java</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/19/java/io-liu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="IO流">
-                        
-                        <span class="card-title">IO流</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
-
-
-流的分类
-数据单位不同：8bit（字节流）、16bit（字符流）
-流向不同：输入流、输出流
-角色不同：节点流、处理
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
                             </span>
                         <span class="publish-author">
                             

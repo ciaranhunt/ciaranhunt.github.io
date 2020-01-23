@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ajax, Ciaran Hunt">
-    <meta name="description" content="前言AJAX = 异步 JavaScript 和 XML。
-AJAX 是一种用于创建快速动态网页的技术。
-通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新">
+    <meta name="keywords" content="多线程, Ciaran Hunt">
+    <meta name="description" content="前言面试经常问的问题：1，线程创建方式&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;2，线程同步
+
+
+基本概念1.程序，进程，线程程序（program）：完成特定任务、用某种语言">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +16,7 @@ AJAX 是一种用于创建快速动态网页的技术。
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Ajax | Ciaran Hunt</title>
+    <title>多线程 | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,12 +306,12 @@ AJAX 是一种用于创建快速动态网页的技术。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ajax</h1>
+                    <h1 class="description center-align post-title">多线程</h1>
                 </div>
             </div>
         </div>
@@ -452,21 +453,21 @@ AJAX 是一种用于创建快速动态网页的技术。
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-21
+                    2020-01-13
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-21
+                    2020-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    290
+                    1.9k
                 </div>
                 
 
@@ -484,28 +485,111 @@ AJAX 是一种用于创建快速动态网页的技术。
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>AJAX = 异步 JavaScript 和 XML。</p>
-<p>AJAX 是一种用于创建快速动态网页的技术。</p>
-<p>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
-<p>传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。</p>
-<p>在 2005 年，Google 通过其 Google Suggest 使 AJAX 变得流行起来。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>面试经常问的问题：1，线程创建方式<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>2，线程同步</p>
 <a id="more"></a>
 
-<h2 id="XMLHttpRequest"><a href="#XMLHttpRequest" class="headerlink" title="XMLHttpRequest"></a>XMLHttpRequest</h2><h3 id="向服务器发送请求"><a href="#向服务器发送请求" class="headerlink" title="向服务器发送请求"></a>向服务器发送请求</h3><p><a href="https://imgchr.com/i/1FQufH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQufH.md.png" alt="1FQufH.md.png"></a></p>
-<h3 id="服务器相应"><a href="#服务器相应" class="headerlink" title="服务器相应"></a>服务器相应</h3><p><a href="https://imgchr.com/i/1FQnte" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQnte.md.png" alt="1FQnte.md.png"></a></p>
-<h3 id="onreadystatechange-事件"><a href="#onreadystatechange-事件" class="headerlink" title="onreadystatechange 事件"></a>onreadystatechange 事件</h3><p><a href="https://imgchr.com/i/1FQmkD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/21/1FQmkD.md.png" alt="1FQmkD.md.png"></a></p>
-<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取元素对象，并修改点击事件</span></span><br><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">"a"</span>)[<span class="number">0</span>].onclick=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//获取XMLHttpRequest对象</span></span><br><span class="line">    <span class="keyword">var</span> request=<span class="keyword">new</span> XMLHttpRequest;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//设置字符串</span></span><br><span class="line">    <span class="keyword">var</span> method=<span class="string">"GET"</span>;</span><br><span class="line">    <span class="keyword">var</span> url=<span class="keyword">this</span>.href;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//规定请求类型</span></span><br><span class="line">    request.open(method,url);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    request.send(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//为XMLHttpRequest对象添加onreadystatechange函数</span></span><br><span class="line">    request.onreadystatechange=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(request.readyState==<span class="number">4</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(request.status==<span class="number">200</span>||request.status==<span class="number">304</span>)&#123;</span><br><span class="line">        alert(request.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//取消默认行为</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="1-程序，进程，线程"><a href="#1-程序，进程，线程" class="headerlink" title="1.程序，进程，线程"></a>1.程序，进程，线程</h3><p><strong>程序</strong>（program）：完成特定任务、用某种语言编写的一组指令的集合.<br><strong>进程</strong>（process）：程序的一次执行，或是正在运行的程序。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">程序是静态的，进程是动态的</span><br></pre></td></tr></table></figure>
 
-<h3 id="数据格式"><a href="#数据格式" class="headerlink" title="数据格式"></a>数据格式</h3><ol>
-<li>json</li>
-<li>xml</li>
-<li>html<ul>
-<li>使用innerHTML操作</li>
-</ul>
+<p><strong>线程</strong>（thread）：进程进一步细化为线程，是一个程序的内部执行路径。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一个Java程序至少有三个线程：，main（）主线程，gc（）垃圾回收线程，异常处理线程</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-并行，并发"><a href="#2-并行，并发" class="headerlink" title="2.并行，并发"></a>2.并行，并发</h3><p><strong>并行</strong>：多个CPU同时执行多个任务<br><strong>并发</strong>：一个cpu执行多个任务（时间片分配）</p>
+<h2 id="线程的创建"><a href="#线程的创建" class="headerlink" title="线程的创建"></a>线程的创建</h2><ol>
+<li><p>继承于Thread类  </p>
+<ol>
+<li><p>创建一个继承Thread类的子类</p>
+</li>
+<li><p>重写run（）方法 （线程执行的操作写入方法中）</p>
+</li>
+<li><p>通过子类的对象的start（）方法（①启动当前线程②调用当前线程的run方法）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意，此时不可调用run方法，否则不能使用创建的线程类，仍然是main线程，且该线程的start（）方法只能执行一次。</span><br></pre></td></tr></table></figure>
+
+<p>变形一下，通过匿名子类的方法实现：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Thread()&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;.start();</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="jQuery中"><a href="#jQuery中" class="headerlink" title="jQuery中"></a>jQuery中</h2><p><img src="https://s2.ax1x.com/2020/01/21/1FrR6x.png" alt="1FrR6x.png"></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"a"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> url=<span class="keyword">this</span>.href;</span><br><span class="line">    <span class="comment">//清除缓存的作用</span></span><br><span class="line">    <span class="keyword">var</span> args=&#123;<span class="string">"time"</span>:<span class="keyword">new</span> <span class="built_in">Date</span>()&#125;;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#d1"</span>).load(url,args);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>实现Runnable接口</p>
+<ol>
+<li>创建一个实现Runnable接口的实现类</li>
+<li>实现run（）方法</li>
+<li>创建实现类对象，将实现类对象作为参数传入Thread类中</li>
+<li>通过start（）调用run（）方法</li>
+</ol>
+</li>
+<li><p>实现Callable接口  </p>
+<ol>
+<li>创建一个实现Callable接口的实现类</li>
+<li>实现call（）方法</li>
+<li>创建实现类对象，将实现类对象作为参数传入FutureTask类中，再将FutureTask类对象传入Thread中。</li>
+<li>通过start（）调用run（）方法</li>
+<li>通过FutureTask类对象的get（）方法获取返回值，还可以跑出异常</li>
+</ol>
+</li>
+<li><p>线程池<br> java语言虽然内置了多线程支持，启动一个新线程非常方便，但是，创建线程需要操作系统资源（线程资源，栈空间等），频繁创建和销毁大量线程需要消耗大量时间。如果可以复用一组线程，那么我们就可以把很多小任务让一组线程来执行，而不是一个任务对应一个新线程。这种能接收大量小任务并进行分发处理的就是线程池。</p>
+<p> 简单地说，线程池内部维护了若干个线程，没有任务的时候，这些线程都处于等待状态。如果有新任务，就分配一个空闲线程执行。如果所有线程都处于忙碌状态，新任务要么放入队列等待，要么增加一个新线程进行处理。</p>
+<p> Java标准库提供了ExecutorService接口表示线程池，它的典型用法如下：</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建固定大小的线程池:</span></span><br><span class="line">ExecutorService service = Executors.newFixedThreadPool(<span class="number">3</span>);</span><br><span class="line"><span class="comment">// 提交任务:</span></span><br><span class="line">service.submit(task1);<span class="comment">//适用于Callable接口</span></span><br><span class="line">service.excute（task2）<span class="comment">//适用于Runnable接口</span></span><br></pre></td></tr></table></figure>
+
+<p> 因为ExecutorService只是接口，Java标准库提供的几个常用实现类有：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FixedThreadPool：线程数固定的线程池；</span><br><span class="line">CachedThreadPool：线程数根据任务动态调整的线程池；</span><br><span class="line">SingleThreadExecutor：仅单线程执行的线程池。</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="比较两者"><a href="#比较两者" class="headerlink" title="比较两者"></a>比较两者</h3><p>两者实现的方式内部不同。<br>继承的方式不是太好，类直接的显示含义基本没有，比如卖票的ticket继承thread，两者没有联系；且java为单继承。</p>
+<p>实现的方式天然有共享数据，而且可以多实现。</p>
+<p>所以优先选择实现方式。</p>
+<h3 id="线程优先级"><a href="#线程优先级" class="headerlink" title="线程优先级"></a>线程优先级</h3><p>最大是10，最小1，默认5</p>
+<ul>
+<li>getPriority()</li>
+<li>setPriority(int p)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">优先级高的线程高概率抢占cpu</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><ul>
+<li>currentThread()：返回当前线程，静态方法</li>
+<li>getName()：返回当前线程名字</li>
+<li>setName()：设当前线程的名字</li>
+<li>yield（）：释放当前cpu使用权</li>
+<li>join（）：指定线程获取cpu使用权，使用完才归还</li>
+<li>sleep（long million）：休眠多少毫秒，静态方法</li>
+<li>isAlive（）：返回线程是否存活</li>
+</ul>
+<h2 id="线程生命周期"><a href="#线程生命周期" class="headerlink" title="线程生命周期"></a>线程生命周期</h2><p>在Java程序中，一个线程对象只能调用一次start()方法启动新线程，并在新线程中执行run()方法。一旦run()方法执行完毕，线程就结束了。因此，Java线程的状态有以下几种：</p>
+<ul>
+<li>New：新创建的线程，尚未执行；  </li>
+<li>Runnable：运行中的线程，正在执行run()方法的Java代码；  </li>
+<li>Blocked：运行中的线程，因为某些操作被阻塞而挂起；  </li>
+<li>Waiting：运行中的线程，因为某些操作在等待中；  </li>
+<li>Timed Waiting：运行中的线程，因为执行sleep()方法正在计时等待；  </li>
+<li>Terminated：线程已终止，因为run()方法执行完毕。  </li>
+</ul>
+<h2 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h2><p>当多个线程同时运行时，线程的调度由操作系统决定，程序本身无法决定。因此，任何一个线程都有可能在任何指令处被操作系统暂停，然后在某个时间段后继续执行。</p>
+<p>这个时候，有个单线程模型下不存在的问题就来了：如果多个线程同时读写共享变量，会出现数据不一致的问题。</p>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li><p>同步代码块  </p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">synchronized</span> (同步监视器)&#123;</span><br><span class="line">    <span class="comment">//需要同步的代码</span></span><br><span class="line">    <span class="comment">//操作共享数据的代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 同步监视器：俗称’锁‘，任何类的对象都可以充当’锁‘；多个线程必须共用同一把锁。<br> 常用的锁：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">实现的方式：</span><br><span class="line">    synchronized (this)</span><br><span class="line">继承的方式：</span><br><span class="line">    synchronized (当前类.class)</span><br></pre></td></tr></table></figure>
+
+<p> <strong>效率会降低</strong></p>
+</li>
+<li><p>同步方法<br> 我们知道Java程序依靠synchronized对线程进行同步，使用synchronized的时候，锁住的是哪个对象非常重要。<br> 让线程自己选择锁对象往往会使得代码逻辑混乱，也不利于封装。更好的方法是把synchronized逻辑封装起来。</p>
+</li>
+<li><p>同步锁<br> Java 5开始，引入了一个高级的处理并发的java.util.concurrent包，它提供了大量更高级的并发功能，能大大简化多线程程序的编写。<br> 我们知道Java语言直接提供了<strong>synchronized</strong>关键字用于加锁，但这种锁一是很重，二是获取时必须一直等待，没有额外的尝试机制。<br> java.util.concurrent.locks包提供的<strong>ReentrantLock</strong>用于替代<strong>synchronized</strong>加锁。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Counter</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Lock lock = <span class="keyword">new</span> ReentrantLock();</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> count;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            count += n;</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="线程死锁"><a href="#线程死锁" class="headerlink" title="线程死锁"></a>线程死锁</h3><p>在获取多个锁的时候，不同线程获取多个不同对象的锁可能导致死锁。<br>此时，两个线程各自持有不同的锁，然后各自试图获取对方手里的锁，造成了双方无限等待下去，这就是死锁。<br>死锁发生后，没有任何机制能解除死锁，只能强制结束JVM进程。<br>因此，在编写多线程应用时，要特别注意防止死锁。因为死锁一旦形成，就只能强制结束进程。</p>
+<h2 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h2><ul>
+<li>wait（）：使当前线程进入阻塞状态，会释放同步监视器（锁）</li>
+<li>notify（）：唤醒另一个优先级高线程</li>
+<li>notifyAll（）：唤醒其它所有线程</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.以上三个方法必须使用在同步代码块或同步方法中</span><br><span class="line">2.以上三个方法的调用者必须是同步监视器</span><br><span class="line">3.以上三个方法定义在java.lang.Object中</span><br></pre></td></tr></table></figure>
 
             </div>
             <hr/>
@@ -531,7 +615,7 @@ AJAX 是一种用于创建快速动态网页的技术。
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/21/java-fu-xi/ajax/">https://ciaranhunt.github.io/2020/01/21/java-fu-xi/ajax/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/13/java/duo-xian-cheng/">https://ciaranhunt.github.io/2020/01/13/java/duo-xian-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -736,32 +820,37 @@ AJAX 是一种用于创建快速动态网页的技术。
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/21/java-fu-xi/ajax/">
+                <a href="/2020/01/13/linux-xue-xi/shi-cao-pian/ci-pan-fen-qu-yu-gua-zai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Ajax">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="磁盘分区与挂载">
                         
-                        <span class="card-title">Ajax</span>
+                        <span class="card-title">磁盘分区与挂载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言AJAX = 异步 JavaScript 和 XML。
-AJAX 是一种用于创建快速动态网页的技术。
-通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新
+                            前言八月中秋白露，路上行人凄凉；小桥流水稻花香，日夜千思万想。心中不得宁静，清晨早念文章；十年寒苦在书房，方显才高智广。
+
+
+基础知识分区方式
+MBR分区
+最多支持四个主分区
+系统只能安装在主分区上
+扩展分区要占一个主分区
+MBR最大支持2
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-13
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -774,12 +863,11 @@ AJAX 是一种用于创建快速动态网页的技术。
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">-Java</span>
+                    <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
+                        <span class="chip bg-color">-系统 -Linux</span>
                     </a>
                     
                 </div>
@@ -793,26 +881,32 @@ AJAX 是一种用于创建快速动态网页的技术。
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/20/qian-duan/html-css/html-xue-xi/">
+                <a href="/2020/01/12/linux-xue-xi/shi-cao-pian/shi-shi-ren-wu-diao-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="HTML学习">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="实时任务调度">
                         
-                        <span class="card-title">HTML学习</span>
+                        <span class="card-title">实时任务调度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
-HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
-HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTM
+                            前言任务调度是指系统在某个时间执行的特定程序或命令。任务调度的分类：
+
+系统工作：有些重要工作必须周而复始的地执行。如病毒扫描。
+个别用户工作：个别用户希望执行的工作。
+
+
+
+crontab指令基本语法：crontab [选项]
+1234常
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-12
                             </span>
                         <span class="publish-author">
                             
@@ -829,8 +923,8 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">-HTML</span>
+                    <a href="/tags/%E7%B3%BB%E7%BB%9F-Linux/">
+                        <span class="chip bg-color">-系统 -Linux</span>
                     </a>
                     
                 </div>
