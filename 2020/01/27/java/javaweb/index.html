@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="自动化构建工具--Maven, Ciaran Hunt">
-    <meta name="description" content="前言Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准">
+    <meta name="keywords" content="JavaWeb, Ciaran Hunt">
+    <meta name="description" content="前言">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>自动化构建工具--Maven | Ciaran Hunt</title>
+    <title>JavaWeb | Ciaran Hunt</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">自动化构建工具--Maven</h1>
+                    <h1 class="description center-align post-title">JavaWeb</h1>
                 </div>
             </div>
         </div>
@@ -450,21 +450,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-23
+                    2020-01-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-24
+                    2020-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    343
+                    2
                 </div>
                 
 
@@ -482,21 +482,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven增加可重用性并负责建立相关的任务。</p>
-<a id="more"></a>
-
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>每个Java项目的目录结构都没有一个统一的标准，配置文件到处都是，单元测试代码到底应该放在那里也没有一个权威的规范。</p>
-<p>因此，我们就要用到Maven（使用Ant也可以，不过编写Ant的xml脚本比较麻烦）—-一个项目管理工具。</p>
-<p>Maven主要做了两件事：</p>
-<ul>
-<li>统一开发规范与工具</li>
-<li>统一管理jar包</li>
-</ul>
-<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><h3 id="①约定的目录结构"><a href="#①约定的目录结构" class="headerlink" title="①约定的目录结构"></a><font color="blue">①约定的目录结构</h3></font>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">项目名</span><br><span class="line">|------src    (源码)</span><br><span class="line">|-------|------- main   (存放主程序类)</span><br><span class="line">|-------|--------|-------java   (存放 Java 源文件)</span><br><span class="line">|-------|--------|-------resources    (存放框架以及其他工具的配置文件)</span><br><span class="line">|-------|-------test    (存放测试程序)</span><br><span class="line">|-------|--------|-------java</span><br><span class="line">|-------|--------|-------resources</span><br><span class="line">|------pom.xml   (Maven工程的核心配置文件)</span><br></pre></td></tr></table></figure>
-
-<h3 id="②POM"><a href="#②POM" class="headerlink" title="②POM"></a><font color="blue">②POM</font></h3><h3 id="③坐标"><a href="#③坐标" class="headerlink" title="③坐标"></a><font color="blue">③坐标</font></h3><h3 id="④依赖"><a href="#④依赖" class="headerlink" title="④依赖"></a><font color="red">④依赖</font></h3><h3 id="⑤仓库"><a href="#⑤仓库" class="headerlink" title="⑤仓库"></a>⑤仓库</h3><h3 id="⑥生命周期-插件-目标"><a href="#⑥生命周期-插件-目标" class="headerlink" title="⑥生命周期/插件/目标"></a>⑥生命周期/插件/目标</h3><h3 id="⑦继承"><a href="#⑦继承" class="headerlink" title="⑦继承"></a>⑦继承</h3><h3 id="⑧聚合"><a href="#⑧聚合" class="headerlink" title="⑧聚合"></a>⑧聚合</h3>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
             </div>
             <hr/>
 
@@ -521,7 +507,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ciaranhunt.github.io/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/">https://ciaranhunt.github.io/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/</a>
+                    <a href="https://ciaranhunt.github.io/2020/01/27/java/javaweb/">https://ciaranhunt.github.io/2020/01/27/java/javaweb/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -726,9 +712,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/01/27/java/javaweb/">
                     <div class="card-image">
@@ -746,9 +733,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -761,6 +748,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -779,26 +767,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/21/java/ajax/">
+                <a href="/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Ajax">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="自动化构建工具--Maven">
                         
-                        <span class="card-title">Ajax</span>
+                        <span class="card-title">自动化构建工具--Maven</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言AJAX = 异步 JavaScript 和 XML。
-AJAX 是一种用于创建快速动态网页的技术。
-通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新
+                            前言Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-23
                             </span>
                         <span class="publish-author">
                             
