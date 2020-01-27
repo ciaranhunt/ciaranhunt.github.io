@@ -8,14 +8,13 @@
     <meta name="description" content="引言“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”–Luduing Wittgerstein
 
 
-用引用操纵对象尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.
-基本类型
+2. 用引用操纵对象尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.
+3.基本类型
 
 
 基本类型
 大小
-最小值
-最大值">
+最小">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -467,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-08
+                    2020-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    97
+                    489
                 </div>
                 
 
@@ -495,8 +494,8 @@
                 <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”<br>–Luduing Wittgerstein</p>
 <a id="more"></a>
 
-<h2 id="用引用操纵对象"><a href="#用引用操纵对象" class="headerlink" title="用引用操纵对象"></a>用引用操纵对象</h2><p>尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.</p>
-<h2 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h2><table>
+<h2 id="2-用引用操纵对象"><a href="#2-用引用操纵对象" class="headerlink" title="2. 用引用操纵对象"></a>2. 用引用操纵对象</h2><p>尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.</p>
+<h2 id="3-基本类型"><a href="#3-基本类型" class="headerlink" title="3.基本类型"></a>3.基本类型</h2><table>
 <thead>
 <tr>
 <th align="center">基本类型</th>
@@ -521,6 +520,23 @@
 <td>Boolean</td>
 </tr>
 </tbody></table>
+<h2 id="4-字段"><a href="#4-字段" class="headerlink" title="4. 字段"></a>4. 字段</h2><h3 id="4-4-1-字段介绍"><a href="#4-4-1-字段介绍" class="headerlink" title="4.4.1 字段介绍"></a>4.4.1 字段介绍</h3><p>如果某类的某个成员会是基本数据类型，JAVA会确保它获得一个默认值。<strong>方法的局部变量不会确保初始化。</strong></p>
+<h3 id="4-4-2-static关键字"><a href="#4-4-2-static关键字" class="headerlink" title="4.4.2 static关键字"></a>4.4.2 static关键字</h3><p>使用情形：  </p>
+<ol>
+<li>只想为某特定域分配单一存储空间，而不用去考虑究竟要创建多少对象，甚至根本不用创建对象。（针对类字段）</li>
+<li>即使没有创建对象，也能调用这个方法。（针对类方法）</li>
+</ol>
+<h2 id="2-5-注释和嵌入式文档"><a href="#2-5-注释和嵌入式文档" class="headerlink" title="2.5 注释和嵌入式文档"></a>2.5 注释和嵌入式文档</h2><h3 id="2-5-1-注释"><a href="#2-5-1-注释" class="headerlink" title="2.5.1 注释"></a>2.5.1 注释</h3><p>共有三种类型的注释文档，分别对应于注释位置后面的三种元素：类、域字段和方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 这个类演示了文档注释</span></span><br><span class="line"><span class="comment">* <span class="doctag">@author</span> Ayan Amhed</span></span><br><span class="line"><span class="comment">* <span class="doctag">@version</span> 1.2</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SquareNum</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * This method returns the square of num.</span></span><br><span class="line"><span class="comment">   * This is a multiline description. You can use</span></span><br><span class="line"><span class="comment">   * as many lines as you like.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> num The value to be squared.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@return</span> num squared.</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">square</span><span class="params">(<span class="keyword">double</span> num)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> num * num;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * This method inputs a number from the user.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@return</span> The value input as a double.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@exception</span> IOException On input error.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@see</span> IOException</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getNumber</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">      InputStreamReader isr = <span class="keyword">new</span> InputStreamReader(System.in);</span><br><span class="line">      BufferedReader inData = <span class="keyword">new</span> BufferedReader(isr);</span><br><span class="line">      String str;</span><br><span class="line">      str = inData.readLine();</span><br><span class="line">      <span class="keyword">return</span> (<span class="keyword">new</span> Double(str)).doubleValue();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * This method demonstrates square().</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> args Unused.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@return</span> Nothing.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@exception</span> IOException On input error.</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@see</span> IOException</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> <span class="keyword">throws</span> IOException</span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">      SquareNum ob = <span class="keyword">new</span> SquareNum();</span><br><span class="line">      <span class="keyword">double</span> val;</span><br><span class="line">      System.out.println(<span class="string">"Enter value to be squared: "</span>);</span><br><span class="line">      val = ob.getNumber();</span><br><span class="line">      val = ob.square(val);</span><br><span class="line">      System.out.println(<span class="string">"Squared value is "</span> + val);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5-2-一些标签示例"><a href="#2-5-2-一些标签示例" class="headerlink" title="2.5.2 一些标签示例"></a>2.5.2 一些标签示例</h3><ol>
+<li>@see：应用其他类</li>
+<li>@version 版本信息</li>
+<li>@author 作者信息</li>
+<li>@param 字段名 描述</li>
+<li>@return 返回值</li>
+<li>@throws 异常类名 描述</li>
+</ol>
 
             </div>
             <hr/>
