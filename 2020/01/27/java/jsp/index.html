@@ -255,7 +255,7 @@
 </ul>
 </li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setJspContext</span><span class="params">(JspContext jspContext)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">this</span>.pageContext = (PageContext) jspContext;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public <span class="keyword">void</span> setJspContext(JspContext jspContext) &#123;</span><br><span class="line">   <span class="keyword">this</span>.pageContext = (PageContext) jspContext;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​    对于带属性的自定义标签：</p>
 <pre><code>1. 先在标签处理器类中声明变量与set方法，建议变量为String类型。
