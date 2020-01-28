@@ -1,412 +1,854 @@
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="loading">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://ciaranhunt.github.io').hostname,
-    root: '/',
-    scheme: 'Muse',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
-
-  <meta name="description" content="君子坦荡荡 小人长戚戚">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ciaran Hunt">
-<meta property="og:url" content="https://ciaranhunt.github.io/archives/2019/12/index.html">
-<meta property="og:site_name" content="Ciaran Hunt">
-<meta property="og:description" content="君子坦荡荡 小人长戚戚">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Ciaran Hunt">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://ciaranhunt.github.io/archives/2019/12/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: false
-  };
-</script>
-
-  <title>归档 | Ciaran Hunt</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Ciaran Hunt</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">Don't Repeat Yourself</p>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-  </ul>
-
-</nav>
-</div>
-    </header>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Archive: 2019/12</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="君子坦荡荡 小人长戚戚,"> 
+    <meta name="author" content="Ciaran Hunt"> 
+    <link rel="alternative" href="atom.xml" title="Ciaran Hunt" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+
+    
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+
+    
+<link rel="stylesheet" href="/css/obsidian.css">
+
+    
+<link rel="stylesheet" href="/css/ball-atom.min.css">
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content">
-            
-
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 24 篇日志。 继续努力。</span>
-      </div>
-
-      
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-31T18:10:24+08:00"
-              content="2019-12-31">
-          12-31
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/31/hexo/an-zhuang-hexo/" itemprop="url">
-            <span itemprop="name">安装hexo</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-31T18:10:24+08:00"
-              content="2019-12-31">
-          12-31
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/31/hexo/geng-huan-hexo-zhu-ti/" itemprop="url">
-            <span itemprop="name">更换hexo主题</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-12-31T18:10:24+08:00"
-              content="2019-12-31">
-          12-31
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/12/31/ruan-jian/wine-de-shi-yong/" itemprop="url">
-            <span itemprop="name">在manjaro下使用wine</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-
+    <span id="config-title" style="display:none">Ciaran Hunt</span>
+    <div id="loader"></div>
+    <div id="single" class="page">
+    <div id="top">
+        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
     </div>
-  </div>
-  
-  
-  
+    <div class="dark-obsidian section">
+        <div class="article animated fadeIn">
+            <div class="main">
+                <div class="content animated fadeIn">
+                    <div class="set">
+                        <h1 style="text-align: center">Archived</h1>
+                        <p style="text-align: center">「 24 」</p>
+                        <ul class="timeline timeline-centered">
+                            
+                            
+                                
+                                <li class="timeline-item period">
+                                    <div class="timeline-info"></div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h2 class="timeline-title">一月 2020</h2>
+                                    </div>
+                                </li>
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 27, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/27/java/jsp/">JavaWeb--jsp学习</a>
+                                        <p>
+                                            前言Java Web，是用Java技术来解决相关web互联网领域的技术总和。web包括：web服务器和web客户端两部分。在学习本教程之前建议先对Java、HTML、CSS、JS、ajax、HTTP、Firebug有所了解。
 
-  
+
+1. EL表达式EL（Expression Language） 是为了使JSP写起来更加简单。表达式语言的灵感来自于 ECMAScript 和 XPath 表达式语...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 23, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/23/java/zi-dong-hua-gou-jian-gong-ju/">自动化构建工具--Maven</a>
+                                        <p>
+                                            前言Maven提供了开发人员构建一个完整的生命周期框架。开发团队可以自动完成项目的基础工具建设，Maven使用标准的目录结构和默认构建生命周期。Maven让开发人员的工作更轻松，同时创建报表，检查，构建和测试自动化设置。Maven简化和标准化项目建设过程。处理编译，分配，文档，团队协作和其他任务的无缝连接。 Maven增加可重用性并负责建立相关的任务。
+
+
+介绍每个Java项目的目录结构都没...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 21, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/21/java/ajax/">Ajax</a>
+                                        <p>
+                                            前言AJAX = 异步 JavaScript 和 XML。
+AJAX 是一种用于创建快速动态网页的技术。
+通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。
+在 2005 年，Google 通过其 Google Suggest 使 AJA...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 20, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/20/qian-duan/html-css/html-xue-xi/">HTML学习</a>
+                                        <p>
+                                            前言HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
+HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
+HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
+
+
+1. 基础1.1 实体在 HTML 中，某些字符是预留的。
+在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 19, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/19/java/io-liu/">IO流</a>
+                                        <p>
+                                            前言好色风流，不是冤家不聚头。只为淫人妇，难保妻儿否，嬉戏眼前谋，孽满身后，报应从头，万恶淫为首，因此上媒色邪淫一笔勾。
+
+
+流的分类
+数据单位不同：8bit（字节流）、16bit（字符流）
+流向不同：输入流、输出流
+角色不同：节点流、处理流
+
+IO流体系
+
+对于非文本文件，字节流用byte数组来存
+对于文本文件，字符流用char数组来存
+
+输入流读取外部数据（磁盘等存储设备）到内存中。  ...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 14, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/14/linux-xue-xi/shi-cao-pian/jin-cheng-guan-li/">进程管理</a>
+                                        <p>
+                                            前言在Linux中，每个进程都会对应一个父进程，而这个父进程可以复制多个子进程。每个进程以两种方式存在：前台和后台。一般系统进程都是后台进程，都会常驻在系统中，关机才结束。
+
+
+ps指令1234常用的选项：  -a 显示当前终端的所有进程  -u 以用户的格式显示信息  -x 显示后台进程运行的参数
+
+标题解释：  
+1234567891011USER：用户PID：进程id%CPU：占用cp...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 13, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/13/linux-xue-xi/shi-cao-pian/ci-pan-fen-qu-yu-gua-zai/">磁盘分区与挂载</a>
+                                        <p>
+                                            前言八月中秋白露，路上行人凄凉；小桥流水稻花香，日夜千思万想。心中不得宁静，清晨早念文章；十年寒苦在书房，方显才高智广。
+
+
+基础知识分区方式
+MBR分区
+最多支持四个主分区
+系统只能安装在主分区上
+扩展分区要占一个主分区
+MBR最大支持2TB，但拥有最好的兼容性
+
+
+GPT分区
+支持无限多个主分区（单操作系统有限制，如windows限制128个）
+最大支持18EB的容量
 
 
 
-          </div>
-          
+Linux分...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 13, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/13/java/duo-xian-cheng/">多线程</a>
+                                        <p>
+                                            前言面试经常问的问题：1，线程创建方式&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2，线程同步
 
+
+基本概念1.程序，进程，线程程序（program）：完成特定任务、用某种语言编写的一组指令的集合.进程（process）：程序的一次执行，或是正在运行的程序。
+1程序是静态的，进程是动态的
+
+线程（thread）：进程进一步细化为...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 12, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/12/linux-xue-xi/shi-cao-pian/shi-shi-ren-wu-diao-du/">实时任务调度</a>
+                                        <p>
+                                            前言任务调度是指系统在某个时间执行的特定程序或命令。任务调度的分类：
+
+系统工作：有些重要工作必须周而复始的地执行。如病毒扫描。
+个别用户工作：个别用户希望执行的工作。
+
+
+
+crontab指令基本语法：crontab [选项]
+1234常用的选项：    -e 编辑定时任务    -l 查询定时任务    -r 删除定时任务
+
+如果只是简单的指令，直接加入crontab任务即可；对于复杂的...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 11, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/11/linux-xue-xi/shi-cao-pian/zu-guan-li-yu-quan-xian-guan-li/">组管理与权限管理</a>
+                                        <p>
+                                            前言linxu用户至少属于一个组，每个文件有所有者、所在组和其它组。劳劳车马未离鞍，临事方知一死难； 三百年来伤国步，八千里路吊民残。  秋风宝剑孤臣泪，落日征旗大将坛， 寰海尘氛纷未已，诸君莫作等闲看
+
+
+所有者一般该用户创建了文件，用户就是文件的所有者
+查看文件所有者1ls -ahl
+
+修改文件所有者1chown 用户名 文件名
+
+所在组一般该用户创建了文件，用户所在组就是文件所在组
+查...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 10, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/">常用指令</a>
+                                        <p>
+                                            前言总结常用的Linux指令说书唱戏劝人方，三条大道走中央，善恶到头终有报，人间正道是沧桑
+
+
+指令运行级别类配置文件在/etc/inittab设计了七个运行级别：
+12345670：关机1：单用户（找回丢失密码）2：多用户无网络服务3：多用户有网络服务4：保留5：图形界面6：重启
+
+切换运行级别基本语法：init 012356 选一个
+找回root密码思路：进入单用户模式，然后修改密码。因...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 10, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/">具体操作.md</a>
+                                        <p>
+                                            前言
+
+连接远程服务器ssh root@47.93.24.123 -p 22
+ftp上传文件
+vi与vim编辑器基本介绍vi编辑器Linux基本上上都会内置，vim可以看做vi的增强版，具有程序编辑的能力。
+三种模式
+正常模式 这是默认的模式，就是我们平常使用的模式，可以使用快捷键
+插入模式（编辑模式） 可以输入模式，按下i,I,o,O,a,A,r,R等任何一个字母都可以进入编辑模式，一般为...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 10, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/">目录结构.md</a>
+                                        <p>
+                                            前言Linux的文件系统是采用级层式的树形结构，最上册是‘/’根目录，然后在此目录下创建其他目录。Linux的世界里，一切皆文件
+
+
+基本介绍
+具体介绍
+/bin目录（/usr/bin,/usr/local/bin）是binary的缩写，存放着最常用的命令
+
+/sbin目录（/usr/sbin,/usr/local/sbin），存放着系统管理员的系统管理程序。
+
+/home目录，存放普通用户...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 09, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/">开山篇.md</a>
+                                        <p>
+                                            前言寒假安装了几个Linux发行版，有openSUSE、manjaro（kde、gnome，xfce）、nitrux和elementrayos，几经折腾后，还是选择了邪教–manjaro。之后就想系统地学习一下Linux，打算Linux做主力系统的，就在尚硅谷的官网找到了视频，学习一下。
+
+
+内容介绍
+学习流程
+Linux环境下的基本操作，包括文件操作、编辑工具使用和Linux用户管理等。
+...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 08, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/08/ruan-jian/jetbrians/">idea的使用</a>
+                                        <p>
+                                            jetbrains的一些相关操作
+
+hosts文件12341.2.3.4 account.jetbrains.com1.2.3.4 http:&#x2F;&#x2F;www.jetbrains.com1.2.3.4 www-weighted.jetbrains.com0.0.0.0 account.jetbrains.com
+
+设置主题
+外观主题：material theme ui
+字体:s...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 05, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/05/ri-chang/a-li-yun/">冲动是魔鬼</a>
+                                        <p>
+                                            啰嗦一大早起来就冲动消费，显示域名买错了，接着云服务器也没错了，查了一下，域名很明显不能退款，但是服务器刚了一波客服，成功退款了.（感觉说啥也没说就退了，难道是家大业大？，不在乎这点蚊子腿肉？）
+
+感觉阿里服务还是可以的，仅凭它给我退款了，不欺诈学生。
+一顿操作之后，发现还是hexo搞头比较多，又换回了hexo，放弃了WordPress。服务器作为学Java的工具吧。
+
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 04, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/04/github/github-xiang-guan-cao-zuo/">github相关指令</a>
+                                        <p>
+                                            基本操作第一次提交远程仓库切换到要提交的文件根目录
+12345git initgit add .git commit -m "first commit"git remote add origin https://github.com/ciaranhunt/test3.gitgit push -u origin master
+
+更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支解决方案...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 02, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/02/java/dui-xiang/">一切都是对象</a>
+                                        <p>
+                                            引言“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”–Luduing Wittgerstein
+
+
+2. 用引用操纵对象尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.
+3.基本类型
+
+
+基本类型
+大小
+最小值
+最大值
+包装类型
+
+
+
+boolean
+无
+无
+无
+Boolean
+
+
+int
+无
+无
+无
+Boolean
+
+
+4. 字段4.4.1 字段介绍如果某类...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 02, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/">给你的manjaro清理空间腾出地方！</a>
+                                        <p>
+                                            使用Arch Linux 时间长了，空间越来越少，不禁想到要清理一下空间。 我将清理的内容分成三部分，清理安装包缓存，清理孤立的软件包，以及清理日志。
+
+
+清理安装包缓存1sudo pacman -Scc
+
+不仅会删除未安装或旧版本的包文件缓存，也会将安装着的包的包文件缓存也一并删除。
+清理孤立的软件包1sudo pacman -Rns $(pacman -Qtdq)
+
+就可以删除孤立的软件...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 02, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/02/github/githu-pei-zhi-ssh-key/">GitHub如何配置SSH Key</a>
+                                        <p>
+                                            https://github.com/ciaranhunt/ciaranhunt.github.io.git
+git@github.com:ciaranhunt/ciaranhunt.github.io.git这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？前者是https url直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">一月 02, 2020</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2020/01/02/linux-xue-xi/ji-chu-pian/an-zhuang-linux-xi-tong/">安装Linux系统</a>
+                                        <p>
+                                            前言考研之前就一直想装黑苹果,考完之后一顿折腾,每次进入安装界面都找不到磁盘,试了很多办法都不能奏效,只能作罢.作为开发人员,就想安装linux作为主力系统了.一开始感觉linux会比较难,就安装了deepin,装完之后感觉不太折腾,就安装了大名鼎鼎的majaro,美观有能折腾.
+
+
+下载工具可以参考官网给出的安装步骤.
+下载系统镜像进入官网可以找到镜像下载的地址下载地址
+下载刻录工具官方推...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item period">
+                                    <div class="timeline-info"></div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h2 class="timeline-title">十二月 2019</h2>
+                                    </div>
+                                </li>
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">十二月 31, 2019</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2019/12/31/hexo/geng-huan-hexo-zhu-ti/">更换hexo主题</a>
+                                        <p>
+                                            前言刚安装hexo的时候就已经安装了Next主题，之后又想安装其它主题，找到了suka主题,本来打算不折腾，没想到又折腾到manjaro了（不过manjaro的自定义程度是真的高）。好了，开始！
+
+下载suka1.可以直接在官方的github的Realese页面下载
+下载最新Realese版本
+最新的释出版本，适合绝大部分用户
+下载 Canary 版本
+包含最新的、尚在开发中的特性，可能不稳...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">十二月 31, 2019</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2019/12/31/hexo/an-zhuang-hexo/">安装hexo</a>
+                                        <p>
+                                            前言我是参考简书这位老哥的教程的，算是很详细的了，主要是刚用 deepin（linux）不太熟悉，所以这位老哥对于我这种小白已经够详细了。中间有一个Github Page配置没有写，所以比较模糊。这也是我第一次使用博客，就以这个作为起点。这是我的博客地址。
+
+
+环境搭建Hexo的介绍及详细信息请查看官方文档,以下是个人安装过程。
+安装Git1sudo apt install git
+
+安装完...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li class="timeline-item">
+                                    <div class="timeline-info">
+                                        <span class="gradient-text">十二月 31, 2019</span>
+                                    </div>
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <a class="timeline-title" target="_self" href="/2019/12/31/ruan-jian/wine-de-shi-yong/">在manjaro下使用wine</a>
+                                        <p>
+                                            使用winelinux运行Windows程序
+
+
+运行/安装Windows应用12wine &lt;exe文件&gt;msiexec -i &lt;msi安装包&gt;
+
+wine菜单管理Wine中安装的应用可以在系统菜单中以Wine子菜单的形式呈现，给予打开应用的便利。例如在系统菜单中的WeChat启动项：这一启动项在文件系统中的存储位置是~/.local/share/applicatio...
+                                        </p>
+                                    </div>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            Ciaran Hunt
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
       }
-    }
+    },
+    messageStyle: "none"
   });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
     });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+
+    
+<script src="/js/busuanzi.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+
+
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Ciaran Hunt</p>
-  <div class="site-description" itemprop="description">君子坦荡荡 小人长戚戚</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">24</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Ciaran Hunt</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
-  </div>
-
-        
 
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
+        gtag('config', 'UA-149874671-1');
+    </script>
 
 
 
 
 
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
 
 
 
 
-
-
-
-
-
-
-  
-
-  
-
-</body>
 </html>

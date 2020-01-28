@@ -1,1151 +1,1018 @@
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="loading">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ciaran Hunt - Don&#39;t Repeat Yourself</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="君子坦荡荡 小人长戚戚,"> 
+    <meta name="author" content="Ciaran Hunt"> 
+    <link rel="alternative" href="atom.xml" title="Ciaran Hunt" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
 
-<link rel="stylesheet" href="/css/main.css">
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
 
+    
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
 
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
 
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://ciaranhunt.github.io').hostname,
-    root: '/',
-    scheme: 'Muse',
-    version: '7.7.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
+    
+<link rel="stylesheet" href="/css/obsidian.css">
 
-  <meta name="description" content="君子坦荡荡 小人长戚戚">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ciaran Hunt">
-<meta property="og:url" content="https://ciaranhunt.github.io/page/2/index.html">
-<meta property="og:site_name" content="Ciaran Hunt">
-<meta property="og:description" content="君子坦荡荡 小人长戚戚">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Ciaran Hunt">
-<meta name="twitter:card" content="summary">
+    
+<link rel="stylesheet" href="/css/ball-atom.min.css">
 
-<link rel="canonical" href="https://ciaranhunt.github.io/page/2/">
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: true,
-    isPost: false
-  };
-</script>
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Ciaran Hunt</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/whoami/" title="ABOUT" external="false">ABOUT</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="CATEGORIES" external="false">CATEGORIES</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="TAGS" external="false">TAGS</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="ARCHIVES" external="false">ARCHIVES</a>
+        </li>
+        
+    </ul>
+    <p class="copyright" id="copyright">
+        &copy; 2020 Ciaran Hunt.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+    </p>
+</div>
 
-  <title>Ciaran Hunt</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
+<div id="container">
+    
+<div class="search-box">
+    <form class="site-search-form">
+        <span class="iconfont icon-search"></span>
+        <input type="text" id="local-search-input" class="st-search-input" />
+        <div class="iconfont icon-cross search-box-close"></div>
+    </form>
+    <div class="search-scrollable">
+        <div id="local-search-result" class="local-search-result-cls" data-initialise="首次搜索，正在载入索引文件，请稍后……"
+            data-start="输入关键词搜索。" data-empty="没有找到内容，请尝试更换检索词。">
+            <span>输入关键词搜索。</span>
+        </div>
+    </div>
+</div>
+<div id="header">
     <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Ciaran Hunt</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">Don't Repeat Yourself</p>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-  </ul>
-
-</nav>
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content">
+        <div class="logo animated fadeInDown">
+            <img src="/img/favicon.png" alt="">
+            <a class="image-logo" href="/"></a>
+        </div>
+        <ul id="menu-menu" class="menu text-menu">
             
-
-  <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/" class="post-title-link" itemprop="url">常用指令</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-10 21:12:41" itemprop="dateCreated datePublished" datetime="2020-01-10T21:12:41+08:00">2020-01-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-13 07:42:03" itemprop="dateModified" datetime="2020-01-13T07:42:03+08:00">2020-01-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>总结常用的Linux指令<br><strong>说书唱戏劝人方，三条大道走中央，善恶到头终有报，人间正道是沧桑</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/whoami/" title="ABOUT" external="false" class="menu-link">ABOUT</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/categories/" title="CATEGORIES" external="false" class="menu-link">CATEGORIES</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/tags/" title="TAGS" external="false" class="menu-link">TAGS</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/archives/" title="ARCHIVES" external="false" class="menu-link">ARCHIVES</a>
+            </li>
+            
+            
+            <li class="animated fadeInDown search-bar iconfont icon-search"></li>
+            
+        </ul>
+        <div class="iconfont icon-menu switchmenu gradient-text animated fadeInDown"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/" class="post-title-link" itemprop="url">具体操作.md</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-10 12:24:23" itemprop="dateCreated datePublished" datetime="2020-01-10T12:24:23+08:00">2020-01-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-12 09:08:44" itemprop="dateModified" datetime="2020-01-12T09:08:44+08:00">2020-01-12</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+</div>
+<div id="screen">
+    <div id="mark">
+        <div class="cover animated fadeIn" style="
+            animation-delay: 900ms;
+            animation-duration: 2.8s;
+            background-image:
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
+                url(/img/cover.jpg);">
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
-
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+    <div id="post0" class="else">
+        <p class="animated fadeInDown">
+            
+            <a href="/categories/-技术向"><b>「
+                </b>-技术向<b> 」</b></a>
+            
+            一月 10, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown">
+            <a href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/" title="常用指令" class="posttitle">常用指令</a></h3>
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/" class="post-title-link" itemprop="url">目录结构.md</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-01-10 10:06:26 / 修改时间：10:57:00" itemprop="dateCreated datePublished" datetime="2020-01-10T10:06:26+08:00">2020-01-10</time>
+        <p class="post-count animated fadeInDown">
+            
+            <span>
+                <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                9.3k
             </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
+            
+            
+            <span>
+                <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                8 mins.
             </span>
+            
+            
+        </p>
+        
+        
+        <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+        
+        <div class="md-content animated fadeIn">
+            
+            <p>总结常用的Linux指令<br><strong>说书唱戏劝人方，三条大道走中央，善恶到头终有报，人间正道是沧桑</strong></p>
+<a id="more"></a>
 
-          
-
+<p>配置文件在<strong>/etc/inittab</strong><br>设计了七个运行级别：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0：关机</span><br><span class="line">1：单用户（找回丢失密码）</span><br><span class="line">2：多...</span></pre></td></tr></table></figure>
+            
+            <span class="read-more"><a href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/" title="查看全文" class="posttitle">查看全文</a>
+                <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Linux的文件系统是采用级层式的树形结构，最上册是‘/’根目录，然后在此目录下创建其他目录。<br><strong>Linux的世界里，一切皆文件</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
-
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+</div>
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/" class="post-title-link" itemprop="url">开山篇.md</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-01-09 18:19:02 / 修改时间：20:15:26" itemprop="dateCreated datePublished" datetime="2020-01-09T18:19:02+08:00">2020-01-09</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>寒假安装了几个Linux发行版，有openSUSE、manjaro（kde、gnome，xfce）、nitrux和elementrayos，几经折腾后，还是选择了邪教–manjaro。之后就想系统地学习一下Linux，打算Linux做主力系统的，就在尚硅谷的官网找到了视频，学习一下。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="typed-text"></span>
+                </p>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/08/ruan-jian/jetbrians/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/08/ruan-jian/jetbrians/" class="post-title-link" itemprop="url">idea的使用</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-08 10:14:25" itemprop="dateCreated datePublished" datetime="2020-01-08T10:14:25+08:00">2020-01-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 07:24:31" itemprop="dateModified" datetime="2020-01-22T07:24:31+08:00">2020-01-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index">
-                    <span itemprop="name">-软件</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="jetbrains的一些相关操作"><a href="#jetbrains的一些相关操作" class="headerlink" title="jetbrains的一些相关操作"></a>jetbrains的一些相关操作</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/08/ruan-jian/jetbrians/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+</div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+    <div id="primary">
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/05/ri-chang/a-li-yun/">
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 10, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/" title="常用指令" class="posttitle">常用指令</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        9.3k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        8 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>总结常用的Linux指令<br><strong>说书唱戏劝人方，三条大道走中央，善恶到头终有报，人间正道是沧桑</strong></p>
+<a id="more"></a>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
+<p>配置文件在<strong>/etc/inittab</strong><br>设计了七个运行级别：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0：关机</span><br><span class="line">1：单用户（找回丢失密码）</span><br><span class="line">2：多用户无网络服务</span><br><span class="line">3：多用户有网络服务</span><br><span class="line">4：保留</span><br><span class="line">5：图形界面</span><br><span class="line">6：重启</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/05/ri-chang/a-li-yun/" class="post-title-link" itemprop="url">冲动是魔鬼</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-05 15:45:25" itemprop="dateCreated datePublished" datetime="2020-01-05T15:45:25+08:00">2020-01-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 07:22:58" itemprop="dateModified" datetime="2020-01-22T07:22:58+08:00">2020-01-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index">
-                    <span itemprop="name">-日常</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+<h3 id="切换运行级别"><a href="#切换运行级别" class="headerlink" title="切换运行级别"></a>切换运行级别</h3><p>基本语法：init 012356 选一个</p>
+<h3 id="找回root密码"><a href="#找回root密码" class="headerlink" title="找回root密码"></a>找回root密码</h3><p>思路：进入单用户模式，然后修改密码。因为单用户模式，root不需要面膜就可以登录。<br>在开机界面，按“e”编辑grub文件，在按“e”编辑内核，输入1，进入单用户模式，执...</p>
+            
+            <span class="read-more"><a href="/2020/01/10/linux-xue-xi/shi-cao-pian/chang-yong-zhi-ling/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
+    </div>
+</div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-          <h2 id="啰嗦"><a href="#啰嗦" class="headerlink" title="啰嗦"></a>啰嗦</h2><p>一大早起来就冲动消费，显示域名买错了，接着云服务器也没错了，查了一下，域名很明显不能退款，但是服务器刚了一波客服，成功退款了.（感觉说啥也没说就退了，难道是家大业大？，不在乎这点蚊子腿肉？）</p>
-<p><a href="https://imgchr.com/i/lDkNvt" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/01/05/lDkNvt.md.png" alt="lDkNvt.md.png"></a></p>
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 10, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/" title="具体操作.md" class="posttitle">具体操作.md</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        2.5k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        2 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <a id="more"></a>
+
+<p>ssh <a href="mailto:root@47.93.24.123">root@47.93.24.123</a> -p 22</p>
+<p><a href="https://www.cnblogs.com/ldmemory/p/6692342.html" target="_blank" rel="noopener">ftp上传文件</a></p>
+<h3 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h3><p>vi编辑器Linux基本上上都会内置，vim可以看做vi的增强版，具有程序编辑的能力。</p>
+<h3 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h3><ol>
+<li>正常模式<br> 这是默认的模式，就是我们平常使用的模式，可以使用快捷键</li>
+<li>插入模式（编辑模式）<br> 可以输入模式，按下i,I,o,O,a,A,r,R等任何一个字母都可以进入编辑模式，一般为i。</li>
+<li>命令行模式<br> 提供相应的指令，完成读盘，存盘，替换，离开vim等动作。<br><a href="https://imgchr.com/i/lhgRJK" target="_blank" rel="noopener"></a></li>
+</ol>
+<h4 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h4><p>均为正常模式的快捷键</p>
+<ul>
+<li>yy 拷贝光标当前行，5yy拷...</li></ul>
+            
+            <span class="read-more"><a href="/2020/01/10/linux-xue-xi/shi-cao-pian/ju-ti-cao-zuo/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 10, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/" title="目录结构.md" class="posttitle">目录结构.md</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        1.7k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        2 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>Linux的文件系统是采用级层式的树形结构，最上册是‘/’根目录，然后在此目录下创建其他目录。<br><strong>Linux的世界里，一切皆文件</strong></p>
+<a id="more"></a>
+
+<p><a href="https://imgchr.com/i/lfo3jK" target="_blank" rel="noopener"></a></p>
+<ul>
+<li><p><strong>/bin目录</strong>（/usr/bin,/usr/local/bin）是binary的缩写，存放着最常用的命令</p>
+</li>
+<li><p><strong>/sbin目录</strong>（/usr/sbin,/usr/local/sbin），存放着系统管理员的系统管理程序。</p>
+</li>
+<li><p><strong>/home目录</strong>，存放普通用户的主目录，每个用户都有自己的目录。</p>
+</li>
+<li><p><strong>/root目录</strong>，超级权限者的户主目录。</p>
+</li>
+<li><p><strong>/lib目录</strong>，系统所需要的动态连接共享库</p>
+</li>
+<li><p><strong>/lost...</strong></p></li></ul>
+            
+            <span class="read-more"><a href="/2020/01/10/linux-xue-xi/ji-chu-pian/mu-lu-jie-gou-md/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 09, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/" title="开山篇.md" class="posttitle">开山篇.md</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        1.2k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        1 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>寒假安装了几个Linux发行版，有openSUSE、manjaro（kde、gnome，xfce）、nitrux和elementrayos，几经折腾后，还是选择了邪教–manjaro。之后就想系统地学习一下Linux，打算Linux做主力系统的，就在尚硅谷的官网找到了视频，学习一下。</p>
+<a id="more"></a>
+
+<p><a href="https://imgchr.com/i/lWbCm8" target="_blank" rel="noopener"></a></p>
+<ol>
+<li><p>Linux环境下的基本操作，包括文件操作、编辑工具使用和Linux用户管理等。</p>
+</li>
+<li><p>Linux的各种配置（环境变量、网络配置）</p>
+</li>
+<li><p>搭建开发环境</p>
+</li>
+<li><p>编写shell脚本</p>
+</li>
+<li><p>进行安全设置</p>
+</li>
+<li><p>深入了解Linux（对内核...</p></li></ol>
+            
+            <span class="read-more"><a href="/2020/01/09/linux-xue-xi/ji-chu-pian/kai-shan-pian-md/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-软件">
+                  <b>「 </b>-软件<b> 」</b>
+                </a>
+            
+            一月 08, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/08/ruan-jian/jetbrians/" title="idea的使用" class="posttitle">idea的使用</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        3.5k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        3 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/java/" rel="tag">-java</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.2.3.4 account.jetbrains.com</span><br><span class="line">1.2.3.4 http:&#x2F;&#x2F;www.jetbrains.com</span><br><span class="line">1.2.3.4 www-weighted.jetbrains.com</span><br><span class="line">0.0.0.0 account.jetbrains.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
+<li>外观主题：material theme ui</li>
+<li>字体:source code pro medium</li>
+<li>大小：20</li>
+<li>设置ctrl+鼠标调节字体大小（位于editor&gt;general的顶部）<br><a href="https://imgchr.com/i/lgB1KO" target="_blank" rel="noopener"></a></li>
+<li>展示方法的用途：documents...</li></ul>
+            
+            <span class="read-more"><a href="/2020/01/08/ruan-jian/jetbrians/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(https://s2.ax1x.com/2020/01/04/lwCXZ9.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-日常">
+                  <b>「 </b>-日常<b> 」</b>
+                </a>
+            
+            一月 05, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/05/ri-chang/a-li-yun/" title="冲动是魔鬼" class="posttitle">冲动是魔鬼</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        428
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        1 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E9%98%BF%E9%87%8C/" rel="tag">-阿里</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>一大早起来就冲动消费，显示域名买错了，接着云服务器也没错了，查了一下，域名很明显不能退款，但是服务器刚了一波客服，成功退款了.（感觉说啥也没说就退了，难道是家大业大？，不在乎这点蚊子腿肉？）</p>
+<p><a href="https://imgchr.com/i/lDkNvt" target="_blank" rel="noopener"></a></p>
 <p>感觉阿里服务还是可以的，仅凭它给我退款了，不欺诈学生。</p>
 <p>一顿操作之后，发现还是hexo搞头比较多，又换回了hexo，放弃了WordPress。服务器作为学Java的工具吧。</p>
 
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/04/github/github-xiang-guan-cao-zuo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/04/github/github-xiang-guan-cao-zuo/" class="post-title-link" itemprop="url">github相关指令</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-04 21:31:28" itemprop="dateCreated datePublished" datetime="2020-01-04T21:31:28+08:00">2020-01-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 07:23:51" itemprop="dateModified" datetime="2020-01-22T07:23:51+08:00">2020-01-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+            
+            <span class="read-more"><a href="/2020/01/05/ri-chang/a-li-yun/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
+    </div>
+</div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-          <h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="第一次提交远程仓库"><a href="#第一次提交远程仓库" class="headerlink" title="第一次提交远程仓库"></a>第一次提交远程仓库</h3><p>切换到要提交的文件根目录</p>
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(https://s2.ax1x.com/2020/01/04/lwqsNF.png);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 04, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/04/github/github-xiang-guan-cao-zuo/" title="github相关指令" class="posttitle">github相关指令</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        1.5k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        1 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Github/" rel="tag">-Github</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <h3 id="第一次提交远程仓库"><a href="#第一次提交远程仓库" class="headerlink" title="第一次提交远程仓库"></a>第一次提交远程仓库</h3><p>切换到要提交的文件根目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin https://github.com/ciaranhunt/test3.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 
 <h4 id="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"><a href="#更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支" class="headerlink" title="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"></a>更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</h4><p>解决方案：需要先获取远端更新并与本地合并,再git push</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/miaoihan/weibo.git</span><br><span class="line">git fetch origin //获取远程更新</span><br><span class="line">git merge origin/master //把更新的内容合并到本地分支</span><br></pre></td></tr></table></figure>
-
-<p>上面的名字，和*.git改成自己的</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/02/java/dui-xiang/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/02/java/dui-xiang/" class="post-title-link" itemprop="url">一切都是对象</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-02 19:17:23" itemprop="dateCreated datePublished" datetime="2020-01-02T19:17:23+08:00">2020-01-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-27 11:04:49" itemprop="dateModified" datetime="2020-01-27T11:04:49+08:00">2020-01-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https:...</span></pre></td></tr></table></figure>
+            
+            <span class="read-more"><a href="/2020/01/04/github/github-xiang-guan-cao-zuo/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”<br>–Luduing Wittgerstein</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/02/java/dui-xiang/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+</div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(https://s2.ax1x.com/2020/01/04/lwCXZ9.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 02, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/02/java/dui-xiang/" title="一切都是对象" class="posttitle">一切都是对象</a></h3>
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/">
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        8.1k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        7 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Java/" rel="tag">-Java</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>“如果我们说另一种不同的语言,那么我们就会发觉一个有些不同的世界.”<br>–Luduing Wittgerstein</p>
+<a id="more"></a>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/" class="post-title-link" itemprop="url">给你的manjaro清理空间腾出地方！</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-02 17:19:01" itemprop="dateCreated datePublished" datetime="2020-01-02T17:19:01+08:00">2020-01-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 07:23:32" itemprop="dateModified" datetime="2020-01-22T07:23:32+08:00">2020-01-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+<p>尽管一切都看作对象,但操纵的标识符实际上时是对象的“引用”.</p>
+<table>
+<thead>
+<tr>
+<th align="center">基本类型</th>
+<th>大小</th>
+<th>最小值</th>
+<th>最大值</th>
+<th>包装类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">boolean</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
+<h3 id="4-4-1-字段介绍"><a href="#4-4-1-字段介绍" class="headerlink" title="4.4.1 字段介绍"></a>4.4.1 字段介绍</h3><p>如果某类的某个成员会是基本数据类型，JAVA会确保它获得一个默认值。<strong>方法的局部变量不会确保初始化。</strong></p>
+<h3 id="4-4-2-static关键字"><a href="#4-4-2-static关键字" class="headerlink" title="4.4.2 static关键字"></a>4.4.2 static关键字</h3><p>使用情形：  </p>
+<ol>
+<li>只想为某特定域分...</li></ol>
+            
+            <span class="read-more"><a href="/2020/01/02/java/dui-xiang/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>使用Arch Linux 时间长了，空间越来越少，不禁想到要清理一下空间。 我将清理的内容分成三部分，清理安装包缓存，清理孤立的软件包，以及清理日志。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+</div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 02, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/" title="给你的manjaro清理空间腾出地方！" class="posttitle">给你的manjaro清理空间腾出地方！</a></h3>
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ciaranhunt.github.io/2020/01/02/github/githu-pei-zhi-ssh-key/">
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        1.2k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        1 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E7%B3%BB%E7%BB%9F-Linux/" rel="tag">-系统 -Linux</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <p>使用Arch Linux 时间长了，空间越来越少，不禁想到要清理一下空间。 我将清理的内容分成三部分，清理安装包缓存，清理孤立的软件包，以及清理日志。</p>
+<a id="more"></a>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ciaran Hunt">
-      <meta itemprop="description" content="君子坦荡荡 小人长戚戚">
-    </span>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Scc</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ciaran Hunt">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/02/github/githu-pei-zhi-ssh-key/" class="post-title-link" itemprop="url">GitHub如何配置SSH Key</a>
-        </h1>
+<p>不仅会删除未安装或旧版本的包文件缓存，也会将安装着的包的包文件缓存也一并删除。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -Rns $(pacman -Qtdq)</span><br></pre></td></tr></table></figure>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-02 15:21:51" itemprop="dateCreated datePublished" datetime="2020-01-02T15:21:51+08:00">2020-01-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 07:24:04" itemprop="dateModified" datetime="2020-01-22T07:24:04+08:00">2020-01-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/" itemprop="url" rel="index">
-                    <span itemprop="name">-技术向</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
+<p>就可以删除孤立的软件包。什么是孤立的软件包呢？比如我想要吃西餐，我需要买刀叉。刀叉即西餐的一个依赖，西餐依赖于刀叉。如果我再也不想要吃西餐了，那么已经买来的刀叉也...</p>
+            
+            <span class="read-more"><a href="/2020/01/02/linux-xue-xi/ji-chu-pian/manjaro-qing-li-kong-jian/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <pre><code>https://github.com/ciaranhunt/ciaranhunt.github.io.git
-git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？<br>前者是<strong>https url</strong>直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置，永久使用呢？当然，所以有了第二种地址，也就是<strong>SSH URL</strong>，那如何配置就是本文要分享的内容。<br>GitHub配置SSH Key的目的是为了帮助我们在通过git提交代码是，不需要繁琐的验证过程，简化操作流程。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/02/github/githu-pei-zhi-ssh-key/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+</div>
 
+
+<div class="post" id="post">
+    <div class="post-cover animated fadeIn" style="
+            background-image:
+            radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+            url(/img/welcome-cover.jpg);">
+    </div>
+    <div class="else">
+        <p class="animated fadeInDown">
+            
+                <a href="/categories/-技术向">
+                  <b>「 </b>-技术向<b> 」</b>
+                </a>
+            
+            一月 02, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown"><a href="/2020/01/02/github/githu-pei-zhi-ssh-key/" title="GitHub如何配置SSH Key" class="posttitle">GitHub如何配置SSH Key</a></h3>
+        
+            <p class="post-count animated fadeInDown">
+                
+                    <span>
+                        <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                        3.2k
+                    </span>
+                
+                
+                    <span>
+                        <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                        3 mins.
+                    </span>
+                
+                
+            </p>
+            
+                <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Github/" rel="tag">-Github</a></li></ul>
+            
+        
+        <div class="md-content animated fadeIn">
+            
+                <pre><code>https://github.com/ciaranhunt/ciaranhunt.github.io.git
+git@github.com:ciaranhunt/ciaranhunt.github.io.git</code></pre><p>这两个地址展示的是同一个项目，但是这两个地址之间有什么联系呢？<br>前者是<strong>https url</strong>直接有效网址打开，但是用户每次通过git提交的时候都要输入用户名和密码，有没有简单的一点的办法，一次配置，永久使用呢？当然，所以有了第二种地址，也就是<strong>SSH URL</strong>，那如何配置就是本文要分享的内容。<br>GitHub...</p>
+            
+            <span class="read-more"><a href="/2020/01/02/github/githu-pei-zhi-ssh-key/" title="查看全文" class="posttitle">查看全文</a> <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+</div>
+
+
+    </div>
     
+    <div id="pager"><a href="/page/3/" class="more" data-loading="加载中..." data-load-more="加载更多">加载更多</a></div>
     
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+</div>
+<div id="preview"></div>
 
-  </div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            Ciaran Hunt
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
       }
-    }
+    },
+    messageStyle: "none"
   });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
     });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+
+
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+
+    
+<script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+
+    
+<script src="/js/busuanzi.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+
+
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Ciaran Hunt</p>
-  <div class="site-description" itemprop="description">君子坦荡荡 小人长戚戚</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">24</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Ciaran Hunt</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
-  </div>
-
-        
 
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
+        gtag('config', 'UA-149874671-1');
+    </script>
 
 
 
 
 
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
 
 
 
 
-
-
-
-
-
-
-  
-
-  
-
-</body>
 </html>
