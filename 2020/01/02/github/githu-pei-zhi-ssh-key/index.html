@@ -81,10 +81,10 @@ git config --global user.email  &quot;your@example.com&quot;</code></pre>
 ls
 或者
 ll</code></pre>
-<p>看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key<br><a href="https://s2.ax1x.com/2020/01/03/lUlBvR.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="lUlBvR.png" class="fancybox"><img alt="lUlBvR.png" data-src="https://s2.ax1x.com/2020/01/03/lUlBvR.png" class="lazyload" title="lUlBvR.png"></a><br>如果没有SSH Key，则需要先生成一下</p>
+<p>看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key<br><a href="https://s2.ax1x.com/2020/01/03/lUlBvR.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="lUlBvR.png" class="fancybox"><img alt="lUlBvR.png" title="lUlBvR.png" data-src="https://s2.ax1x.com/2020/01/03/lUlBvR.png" class="lazyload"></a><br>如果没有SSH Key，则需要先生成一下</p>
 <pre><code class="bash">ssh-keygen -t rsa -C &quot;571074750@qq.com&quot;</code></pre>
 <h2 id="获取SSH-Key"><a href="#获取SSH-Key" class="headerlink" title="获取SSH Key"></a>获取SSH Key</h2><pre><code class="bash">cat id_rsa.pub</code></pre>
-<p><a href="https://s2.ax1x.com/2020/01/03/lUlyb6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="lUlyb6.png" class="fancybox"><img alt="lUlyb6.png" data-src="https://s2.ax1x.com/2020/01/03/lUlyb6.png" class="lazyload" title="lUlyb6.png"></a></p>
+<p><a href="https://s2.ax1x.com/2020/01/03/lUlyb6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="lUlyb6.png" class="fancybox"><img alt="lUlyb6.png" title="lUlyb6.png" data-src="https://s2.ax1x.com/2020/01/03/lUlyb6.png" class="lazyload"></a></p>
 <h2 id="GitHub添加SSH-Key"><a href="#GitHub添加SSH-Key" class="headerlink" title="GitHub添加SSH Key"></a>GitHub添加SSH Key</h2><ol>
 <li>GitHub点击用户头像，选择setting</li>
 <li>选择SSH and GPGkeys</li>
