@@ -459,14 +459,14 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-01-23
+                    2020-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    689
+                    884
                 </div>
                 
 
@@ -489,27 +489,28 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
 <p>HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。</p>
 <a id="more"></a>
 
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="1-实体"><a href="#1-实体" class="headerlink" title="1.实体"></a>1.实体</h3><p>在 HTML 中，某些字符是预留的。</p>
+<h2 id="1-基础"><a href="#1-基础" class="headerlink" title="1. 基础"></a>1. 基础</h2><h3 id="1-1-实体"><a href="#1-1-实体" class="headerlink" title="1.1 实体"></a>1.1 实体</h3><p>在 HTML 中，某些字符是预留的。</p>
 <p>在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。</p>
 <p>如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。<br>也就是转义。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">语法：&amp;实体的名字；</span><br><span class="line">常用的实体：  </span><br><span class="line">    空格---&amp;nbsp;</span><br><span class="line">    小于号---&lt;</span><br><span class="line">    大于号---&gt;</span><br><span class="line">    版权（copyright）---&amp;copy;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-图片-img标签"><a href="#2-图片-img标签" class="headerlink" title="2.图片-img标签"></a>2.图片-img标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://s2.ax1x.com/2020/01/04/ldzewq.md.jpg"</span> <span class="attr">alt</span>=<span class="string">"ldzewq.jpg"</span> <span class="attr">border</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-2-图片-img标签"><a href="#1-2-图片-img标签" class="headerlink" title="1.2 图片-img标签"></a>1.2 图片-img标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://s2.ax1x.com/2020/01/04/ldzewq.md.jpg"</span> <span class="attr">alt</span>=<span class="string">"ldzewq.jpg"</span> <span class="attr">border</span>=<span class="string">"0"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>属性：<br>    - src：指定图片地址<br>    - alt：指定图片描述<br>    - width：修改图片宽度<br>    - height：修改图片高度</p>
-<h3 id="3-meta标签"><a href="#3-meta标签" class="headerlink" title="3.meta标签"></a>3.meta标签</h3><p>作用：<br>    1. 设定字符集<br>    2. 描述网页内容，设定关键字<br>    3. 请求重定向  </p>
-<h3 id="4-XHTML语法规范"><a href="#4-XHTML语法规范" class="headerlink" title="4.XHTML语法规范"></a>4.XHTML语法规范</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">文档结构</span><br><span class="line">    XHTML DOCTYPE 是强制性的</span><br><span class="line">    &lt;html&gt; 中的 XML namespace 属性是强制性的</span><br><span class="line">    &lt;html&gt;、&lt;head&gt;、&lt;title&gt; 以及 &lt;body&gt; 也是强制性的</span><br><span class="line">元素语法</span><br><span class="line">    XHTML 元素必须正确嵌套</span><br><span class="line">    XHTML 元素必须始终关闭</span><br><span class="line">    XHTML 元素必须小写</span><br><span class="line">    XHTML 文档必须有一个根元素</span><br><span class="line">属性语法</span><br><span class="line">    XHTML 属性必须使用小写</span><br><span class="line">    XHTML 属性值必须用引号包围</span><br><span class="line">    XHTML 属性最小化也是禁止的</span><br></pre></td></tr></table></figure>
+<h3 id="1-3meta标签"><a href="#1-3meta标签" class="headerlink" title="1.3meta标签"></a>1.3meta标签</h3><p>作用：<br>    1. 设定字符集<br>    2. 描述网页内容，设定关键字<br>    3. 请求重定向  </p>
+<h3 id="1-4-XHTML语法规范"><a href="#1-4-XHTML语法规范" class="headerlink" title="1.4 XHTML语法规范"></a>1.4 XHTML语法规范</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">文档结构</span><br><span class="line">    XHTML DOCTYPE 是强制性的</span><br><span class="line">    &lt;html&gt; 中的 XML namespace 属性是强制性的</span><br><span class="line">    &lt;html&gt;、&lt;head&gt;、&lt;title&gt; 以及 &lt;body&gt; 也是强制性的</span><br><span class="line">元素语法</span><br><span class="line">    XHTML 元素必须正确嵌套</span><br><span class="line">    XHTML 元素必须始终关闭</span><br><span class="line">    XHTML 元素必须小写</span><br><span class="line">    XHTML 文档必须有一个根元素</span><br><span class="line">属性语法</span><br><span class="line">    XHTML 属性必须使用小写</span><br><span class="line">    XHTML 属性值必须用引号包围</span><br><span class="line">    XHTML 属性最小化也是禁止的</span><br></pre></td></tr></table></figure>
 
-<h3 id="内联框架–iframe"><a href="#内联框架–iframe" class="headerlink" title="内联框架–iframe"></a>内联框架–iframe</h3><p>在页面引用另一个页面的元素，不推荐使用，因为搜索引擎不会检索。</p>
-<h3 id="超链接–a"><a href="#超链接–a" class="headerlink" title="超链接–a"></a>超链接–a</h3><p>常用的属性：<br>    - href：目标地址<br>    - target：打开的方式</p>
-<h3 id="块元素与内联元素"><a href="#块元素与内联元素" class="headerlink" title="块元素与内联元素"></a>块元素与内联元素</h3><ul>
+<h3 id="1-5-内联框架–iframe"><a href="#1-5-内联框架–iframe" class="headerlink" title="1.5 内联框架–iframe"></a>1.5 内联框架–iframe</h3><p>在页面引用另一个页面的元素，不推荐使用，因为搜索引擎不会检索。</p>
+<h3 id="1-6-超链接–a"><a href="#1-6-超链接–a" class="headerlink" title="1.6 超链接–a"></a>1.6 超链接–a</h3><p>常用的属性：<br>    - href：目标地址<br>    - target：打开的方式</p>
+<h3 id="1-7-块元素与内联元素"><a href="#1-7-块元素与内联元素" class="headerlink" title="1.7 块元素与内联元素"></a>1.7 块元素与内联元素</h3><ul>
 <li>块元素：div、p、h1、h2、h3等，独占一行</li>
 <li>内联元素：span，只占自身元素大小，会自动换行<br>一般情况是块元素包含内联元素</li>
 </ul>
-<h2 id="核心技术"><a href="#核心技术" class="headerlink" title="核心技术"></a>核心技术</h2><h3 id="attr与prop"><a href="#attr与prop" class="headerlink" title="attr与prop"></a>attr与prop</h3><ul>
+<h2 id="2-核心技术"><a href="#2-核心技术" class="headerlink" title="2. 核心技术"></a>2. 核心技术</h2><h3 id="2-1-attr与prop"><a href="#2-1-attr与prop" class="headerlink" title="2.1 attr与prop"></a>2.1 attr与prop</h3><ul>
 <li><p><font color="red"><strong>attribute</strong></font><br>包括html<strong>预定义</strong>属性与html<strong>自定义</strong>属性,是<strong>HTML</strong>标签的属性。</p>
 </li>
-<li><p><font color="red"><strong>property</strong></font>是<strong>js</strong>原生对象的直接属性。</p>
+<li><p><font color="red"><strong>property</strong></font></p>
+<p>是<strong>js</strong>原生对象的直接属性。</p>
 </li>
 </ul>
 <p>每一个预定义的attribute都有一个property对象与之对应。</p>
@@ -523,9 +524,32 @@ HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了�
 </ol>
 </li>
 </ul>
-<p>浏览器与用户操作的都是property</p>
+<p><strong>浏览器与用户操作的都是property</strong></p>
 <h3 id="那么，什么时候使用attr-，什么时候使用prop"><a href="#那么，什么时候使用attr-，什么时候使用prop" class="headerlink" title="那么，什么时候使用attr()，什么时候使用prop()"></a>那么，什么时候使用attr()，什么时候使用prop()</h3><p>1、是有true,false两个属性值使用prop()，prop多适用于复选框全选和反选的、下拉框、禁用、单选情况。</p>
 <p>2、其他属性操作则使用attr();</p>
+<h3 id="2-2-H5小功能"><a href="#2-2-H5小功能" class="headerlink" title="2.2 H5小功能"></a>2.2 H5小功能</h3><ul>
+<li>若标签的class属性有多个值时，可以使用classList获取class数组，使用add（）或remove（）方法添加或删除class值；toggle()方法无则新增，有则删除。</li>
+</ul>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"t0"</span> <span class="attr">class</span>=<span class="string">"t1 t2 t3"</span> <span class="attr">data-hl</span>=<span class="string">"hl"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tNode=<span class="built_in">document</span>.getElementById(<span class="string">"t0"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(tNode.classList);</span><br><span class="line">tNode.classList.add(<span class="string">"t4"</span>);</span><br><span class="line">tNode.classList.remove(<span class="string">"t1"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(tNode.classList);</span><br><span class="line">tNode.classList.toggle(<span class="string">"t1"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(tNode.classList);</span><br></pre></td></tr></table></figure>
+
+<p>  控制台输出结果为：</p>
+<p>  <img src="https://s2.ax1x.com/2020/01/27/1ucx4s.png" alt="1ucx4s.png"></p>
+<ul>
+<li><p>对于标签中自定义属性，使用data-*的格式可以使用dataset获取。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(tNode.dataset.hl);</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hl</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可编程能力。可以对文本进行编辑，在标签属性添加<strong>contenteditable=”true”</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"t0"</span> <span class="attr">contenteditable</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">    hello world!</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
 
             </div>
             <hr/>
