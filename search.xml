@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>自动部署</title>
+      <link href="/2020/01/31/hexo/zi-dong-bu-shu/"/>
+      <url>/2020/01/31/hexo/zi-dong-bu-shu/</url>
+      
+        <content type="html"><![CDATA[<p>#!/bin/bash<br>echo “”<br>#输出当前时间<br>date –date=’0 days ago’ “+%Y-%m-%d %H:%M:%S”<br>echo “Start”<br>#判断宝塔WebHook参数是否存在<br>if [ ! -n “$1” ];<br>then<br>          echo “param参数错误”<br>          echo “End”<br>          exit<br>fi<br>#git项目路径（$1是param后面的参数，指向你的服务器的目录）<br>gitPath=”/www/wwwroot/$1”<br>#git 网址 (替换成你的git地址，可选择https方式或者ssh方式)<br>gitHttp=”<a href="https://gitee.com/ciaranhunt/blog.git&quot;" target="_blank" rel="noopener">https://gitee.com/ciaranhunt/blog.git&quot;</a></p><p>echo “Web站点路径：$gitPath”</p><p>#判断项目路径是否存在<br>if [ -d “$gitPath” ]; then<br>        cd $gitPath<br>        #判断是否存在git目录<br>        if [ ! -d “.git” ]; then<br>                echo “在该目录下克隆 git”<br>                git clone $gitHttp gittemp<br>                mv gittemp/.git .<br>                rm -rf gittemp<br>        fi<br>        #拉取最新的项目文件<br>        #git reset –hard origin/master<br>        git pull <a href="https://gitee.com/ciaranhunt/blog.git" target="_blank" rel="noopener">https://gitee.com/ciaranhunt/blog.git</a> master<br>        ehco “拉去成功”<br>        echo “End”<br>        exit<br>else<br>        echo “该项目路径不存在”<br>        echo “End”<br>        exit<br>fi</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -技术向 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaWeb--jsp学习-2</title>
       <link href="/2020/01/30/java/jsp2/"/>
       <url>/2020/01/30/java/jsp2/</url>
