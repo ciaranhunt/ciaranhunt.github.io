@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>spring</title>
+      <link href="/2020/02/03/java/kuang-jia/spring/"/>
+      <url>/2020/02/03/java/kuang-jia/spring/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> -技术向 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mybatis2</title>
       <link href="/2020/02/01/java/kuang-jia/mybatis2/"/>
       <url>/2020/02/01/java/kuang-jia/mybatis2/</url>
@@ -533,7 +560,7 @@
       <link href="/2020/01/04/github/github-xiang-guan-cao-zuo/"/>
       <url>/2020/01/04/github/github-xiang-guan-cao-zuo/</url>
       
-        <content type="html"><![CDATA[<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="第一次提交远程仓库"><a href="#第一次提交远程仓库" class="headerlink" title="第一次提交远程仓库"></a>第一次提交远程仓库</h3><p>切换到要提交的文件根目录</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br>git add .<br>git commit -m <span class="hljs-string">"first commit"</span><br>git remote add origin https://github.com/ciaranhunt/test3.git<br>git push -u origin master<br></code></pre></td></tr></table></figure></div><h4 id="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"><a href="#更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支" class="headerlink" title="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"></a>更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</h4><p>解决方案：需要先获取远端更新并与本地合并,再git push</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote add origin https://github.com/miaoihan/weibo.git<br>git fetch origin //获取远程更新<br>git merge origin/master //把更新的内容合并到本地分支<br></code></pre></td></tr></table></figure></div><p>上面的名字，和*.git改成自己的</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="第一次提交远程仓库"><a href="#第一次提交远程仓库" class="headerlink" title="第一次提交远程仓库"></a>第一次提交远程仓库</h3><p>切换到要提交的文件根目录</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br>git remote add origin https://github.com/ciaranhunt/test3.git<br>git pull https://github.com/ciaranhunt/test3.git master<br>git add .<br>git commit -m <span class="hljs-string">"first commit"</span><br>git push -u origin master<br></code></pre></td></tr></table></figure></div><h4 id="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"><a href="#更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支" class="headerlink" title="更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支"></a>更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支</h4><p>解决方案：需要先获取远端更新并与本地合并,再git push</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote add origin https://github.com/miaoihan/weibo.git<br>git fetch origin //获取远程更新<br>git merge origin/master //把更新的内容合并到本地分支<br></code></pre></td></tr></table></figure></div><p>上面的名字，和*.git改成自己的</p>]]></content>
       
       
       <categories>
